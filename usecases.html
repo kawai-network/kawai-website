@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/static/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="/static/favicon/favicon.ico">
+    <title>KAWAI Blockchain Explorer</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            200: '#c7d2fe',
+                            300: '#a5b4fc',
+                            400: '#818cf8',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            800: '#3730a3',
+                            900: '#312e81',
+                            950: '#1e1b4b',
+                        },
+                        kawai: {
+                            red: '#ff3a5e',
+                            'red-light': '#ff6b84',
+                            'red-dark': '#cc2e4b',
+                            black: '#121212',
+                            white: '#f9f9f9'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hash-text {
+            word-break: break-all;
+        }
+         
+        .copyable {
+            cursor: pointer;
+            position: relative;
+            padding-right: 24px;
+            display: inline-flex;
+            align-items: center;
+        }
+        .copyable:hover {
+            background-color: rgba(99, 102, 241, 0.1);
+            border-radius: 4px;
+        }
+        .copyable .copy-icon {
+            opacity: 0.5;
+            margin-left: 4px;
+            transition: opacity 0.2s;
+        }
+        .copyable:hover .copy-icon {
+            opacity: 1;
+        }
+         
+        .toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 24px;
+            background-color: #4ade80;
+            color: white;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: opacity 0.3s, transform 0.3s;
+            z-index: 1000;
+        }
+        .toast.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+         
+        .animation-delay-1000 {
+            animation-delay: 1s;
+        }
+        .animation-delay-2000 {
+            animation-delay: 2s;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    
+    
+    <nav class="bg-gradient-to-r from-gray-900 to-gray-800 text-white shadow-md">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="/" class="text-xl font-bold flex items-center">
+                    <img src="/static/kawai-background-red.png" alt="KAWAI Logo" class="h-10 mr-2 rounded-lg">
+                    KAWAI
+                </a>
+                <div class="flex items-center">
+                    <form action="/search" method="GET" class="flex mr-4">
+                        <input 
+                            class="px-4 py-2 rounded-l text-gray-800 focus:outline-none" 
+                            type="search" 
+                            name="q" 
+                            placeholder="Search by Tx Hash, Address, Block..." 
+                        />
+                        <button class="bg-primary-600 hover:bg-primary-700 px-4 py-2 rounded-r" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <a href="/tx/" class="text-white hover:text-primary-200 mx-2">
+                        <i class="fas fa-exchange-alt mr-1"></i>
+                        <span>Transactions</span>
+                    </a>
+                    <a href="/block/" class="text-white hover:text-primary-200 mx-2">
+                        <i class="fas fa-cube mr-1"></i>
+                        <span>Blocks</span>
+                    </a>
+                    <a href="/#wallet" class="text-white hover:text-primary-200 mx-2">
+                        <i class="fas fa-wallet mr-1"></i>
+                        <span>Wallet</span>
+                    </a>
+                    <a href="/usecases" class="text-white hover:text-primary-200 mx-2">
+                        <i class="fas fa-lightbulb mr-1"></i>
+                        <span>Use Cases</span>
+                    </a>
+                    <a href="/assistants" class="text-white hover:text-primary-200 mx-2">
+                        <i class="fas fa-robot mr-1"></i>
+                        <span>AI Assistants</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+
+    
+        
+        <div class="container mx-auto px-4 py-8">
+            
+                
+<div class="py-8">
+    <h1 class="text-3xl font-bold mb-8 text-gray-800">Blockchain Use Cases in Decentralized AI</h1>
+    
+    <div class="bg-white rounded-lg shadow-md p-8 mb-8">
+        <h2 class="text-2xl font-bold mb-6 text-indigo-800">The Convergence of Blockchain and GPU/CPU Computing</h2>
+        
+        <p class="mb-4 text-gray-700 leading-relaxed">
+            The fusion of blockchain technology with artificial intelligence has given rise to decentralized AI processing systems that are reshaping how computational resources are allocated, managed, and utilized. As of early 2025, this convergence represents one of the most promising developments in both the blockchain and AI spaces, offering solutions to critical limitations of traditional centralized AI infrastructure.
+        </p>
+        
+        <div class="bg-indigo-50 p-6 rounded-lg mb-6">
+            <h3 class="font-bold text-lg mb-3 text-indigo-800">Market Projections</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-4 rounded-lg shadow text-center">
+                    <p class="text-gray-500 text-sm mb-1">Global AI Market</p>
+                    <p class="text-3xl font-bold text-indigo-600">$2.58T</p>
+                    <p class="text-gray-500 text-sm">by 2032</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow text-center">
+                    <p class="text-gray-500 text-sm mb-1">Blockchain AI Market</p>
+                    <p class="text-3xl font-bold text-indigo-600">$973.6M</p>
+                    <p class="text-gray-500 text-sm">by 2027</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow text-center">
+                    <p class="text-gray-500 text-sm mb-1">Annual Growth Rate</p>
+                    <p class="text-3xl font-bold text-green-600">~40%</p>
+                    <p class="text-gray-500 text-sm">AI business</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bg-white rounded-lg shadow-md p-8 mb-8">
+        <h2 class="text-2xl font-bold mb-6 text-indigo-800">The GPU Bottleneck Problem</h2>
+        
+        <div class="flex flex-col md:flex-row">
+            <div class="w-full md:w-2/3 pr-0 md:pr-8">
+                <p class="mb-4 text-gray-700 leading-relaxed">
+                    A critical challenge in AI development is the GPU bottleneck. With AI business projected to exceed $400 billion by 2027 and growing at an annual rate of nearly 40%, the demand for GPU resources has skyrocketed. Global chip shortages and complex GPU manufacturing processes have created significant constraints, limiting researchers' and businesses' ability to scale and innovate in AI.
+                </p>
+                <p class="mb-4 text-gray-700 leading-relaxed">
+                    This bottleneck presents a particular hardship for small and medium AI companies that struggle to secure affordable GPU resources. Decentralized GPU networks offer a viable alternative by providing access to a marketplace of distributed GPUs, enabling more efficient sourcing from diverse providers.
+                </p>
+            </div>
+            <div class="w-full md:w-1/3 mt-6 md:mt-0">
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <h4 class="font-bold text-gray-800 mb-2">Key Challenges:</h4>
+                    <ul class="list-disc pl-5 text-gray-700">
+                        <li>Global chip shortages</li>
+                        <li>Complex manufacturing processes</li>
+                        <li>High acquisition costs</li>
+                        <li>Centralized resource control</li>
+                        <li>Accessibility constraints</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bg-white rounded-lg shadow-md p-8 mb-8">
+        <h2 class="text-2xl font-bold mb-6 text-indigo-800">How Decentralized GPU/CPU Networks Function</h2>
+        
+        <p class="mb-6 text-gray-700 leading-relaxed">
+            Decentralized GPU farms operate as networks of geographically distributed computers equipped with graphics processing units that collaborate to perform intensive computational tasks. These networks leverage blockchain technology to coordinate and optimize GPU resource usage across various locations and participants.
+        </p>
+        
+        <div class="bg-indigo-50 p-6 rounded-lg mb-6">
+            <h3 class="font-bold text-lg mb-3 text-indigo-800">Network Participants and Roles</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <div class="flex items-center mb-3">
+                        <div class="w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center mr-3">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-800">Contributors</h4>
+                    </div>
+                    <p class="text-gray-700">
+                        Individuals or entities providing GPU/CPU power to the network, incentivized through rewards typically paid in cryptocurrency tokens.
+                    </p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <div class="flex items-center mb-3">
+                        <div class="w-10 h-10 rounded-full bg-green-500 text-white flex items-center justify-center mr-3">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h4 class="font-bold text-gray-800">Clients</h4>
+                    </div>
+                    <p class="text-gray-700">
+                        Entities requiring computational resources for tasks such as AI model training, rendering, or scientific simulations.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <h3 class="font-bold text-lg mb-3 text-indigo-800">Task Allocation and Processing Flow</h3>
+        <div class="relative mb-6">
+            <div class="absolute left-5 inset-y-0 w-0.5 bg-gray-200"></div>
+            <div class="space-y-6">
+                <div class="flex">
+                    <div class="flex-shrink-0 z-10">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500 text-white flex items-center justify-center">1</div>
+                    </div>
+                    <div class="flex-grow ml-4 p-4 bg-gray-50 rounded-lg">
+                        <p class="text-gray-700">
+                            <span class="font-bold">Job Submission & Subdivision:</span> The job is submitted by a client and subdivided into smaller tasks by smart contracts.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex-shrink-0 z-10">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500 text-white flex items-center justify-center">2</div>
+                    </div>
+                    <div class="flex-grow ml-4 p-4 bg-gray-50 rounded-lg">
+                        <p class="text-gray-700">
+                            <span class="font-bold">Task Distribution:</span> Tasks are distributed throughout the network based on each contributor's GPU capability and availability.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex-shrink-0 z-10">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500 text-white flex items-center justify-center">3</div>
+                    </div>
+                    <div class="flex-grow ml-4 p-4 bg-gray-50 rounded-lg">
+                        <p class="text-gray-700">
+                            <span class="font-bold">Processing:</span> Contributors process their allocated work using their GPUs.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex-shrink-0 z-10">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500 text-white flex items-center justify-center">4</div>
+                    </div>
+                    <div class="flex-grow ml-4 p-4 bg-gray-50 rounded-lg">
+                        <p class="text-gray-700">
+                            <span class="font-bold">Result Aggregation:</span> Results are returned to the blockchain for verification and aggregation.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex-shrink-0 z-10">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500 text-white flex items-center justify-center">5</div>
+                    </div>
+                    <div class="flex-grow ml-4 p-4 bg-gray-50 rounded-lg">
+                        <p class="text-gray-700">
+                            <span class="font-bold">Reward Distribution:</span> Upon successful completion and verification, contributors receive automatic reward distribution managed by smart contracts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bg-white rounded-lg shadow-md p-8 mb-8">
+        <h2 class="text-2xl font-bold mb-6 text-indigo-800">Major Projects in Decentralized AI Processing</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <div class="h-3 bg-blue-500"></div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Render Network</h3>
+                    <p class="text-gray-600 mb-4">
+                        A decentralized, peer-to-peer solution that harnesses the power of idle GPUs worldwide to facilitate render jobs.
+                    </p>
+                    <div class="text-sm text-gray-500">
+                        <span class="font-bold">Market Cap:</span> $4.19B+ (2025)
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <div class="h-3 bg-green-500"></div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Akash Network</h3>
+                    <p class="text-gray-600 mb-4">
+                        An open marketplace allowing users to access CPU, GPU, and storage resources through a reverse auction model.
+                    </p>
+                    <div class="text-sm text-gray-500">
+                        <span class="font-bold">Growth:</span> 1,217% (2023-2025)
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <div class="h-3 bg-purple-500"></div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">io.net</h3>
+                    <p class="text-gray-600 mb-4">
+                        "The Internet of GPUs" offering decentralized GPU clusters specifically designed for AI startups.
+                    </p>
+                    <div class="text-sm text-gray-500">
+                        <span class="font-bold">Features:</span> DePIN, ML workloads, Solana Pay
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <div class="h-3 bg-indigo-500"></div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Internet Computer (ICP)</h3>
+                    <p class="text-gray-600 mb-4">
+                        A public blockchain network that combines individual computers into a seamless universe for hosting smart contracts and running AI models directly on-chain.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <div class="h-3 bg-yellow-500"></div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Bittensor</h3>
+                    <p class="text-gray-600 mb-4">
+                        A decentralized AI project that leverages distributed computing resources specifically for machine learning, competing directly with centralized AI services.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bg-white rounded-lg shadow-md p-8">
+        <h2 class="text-2xl font-bold mb-6 text-indigo-800">Benefits of Decentralized AI Processing</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-gray-800">Cost Efficiency</h3>
+                <ul class="list-disc pl-5 text-gray-700 mb-8">
+                    <li class="mb-2">Utilizes idle computing resources worldwide</li>
+                    <li class="mb-2">Reduces infrastructure costs compared to centralized data centers</li>
+                    <li class="mb-2">Enables easy scaling as more contributors join</li>
+                </ul>
+                
+                <h3 class="text-xl font-bold mb-4 text-gray-800">Democratized Access</h3>
+                <ul class="list-disc pl-5 text-gray-700">
+                    <li class="mb-2">Smaller enterprises and researchers can access high-performance computing</li>
+                    <li class="mb-2">Reduces financial barriers to AI development</li>
+                    <li class="mb-2">Accelerates innovation through wider participation</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-gray-800">Enhanced Security</h3>
+                <ul class="list-disc pl-5 text-gray-700 mb-8">
+                    <li class="mb-2">Local data processing reduces hacking risks</li>
+                    <li class="mb-2">Blockchain's immutable ledger ensures data and model integrity</li>
+                    <li class="mb-2">Cryptographic techniques preserve data rights</li>
+                </ul>
+                
+                <h3 class="text-xl font-bold mb-4 text-gray-800">Censorship Resistance</h3>
+                <ul class="list-disc pl-5 text-gray-700">
+                    <li class="mb-2">Countermeasure to the concentration of AI development within tech giants</li>
+                    <li class="mb-2">Ensures AI development remains open and accessible</li>
+                    <li class="mb-2">Prevents monopolistic control of AI resources</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+            
+        </div>
+    
+
+    
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4 flex items-center">
+                        <img src="/static/kawai-background-red.png" alt="KAWAI Logo" class="h-10 mr-3 rounded-lg">
+                        KAWAI
+                    </h3>
+                    <p class="mb-4">The premier blockchain explorer for the KAWAI network - the backbone of decentralized AI.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Explorer</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="hover:text-white">Home</a></li>
+                        <li><a href="/block/" class="hover:text-white">Blocks</a></li>
+                        <li><a href="/tx/" class="hover:text-white">Transactions</a></li>
+                        <li><a href="/#wallet" class="hover:text-white">Wallet</a></li>
+                        <li><a href="/search" class="hover:text-white">Search</a></li>
+                        <li><a href="/usecases" class="hover:text-white">Use Cases</a></li>
+                        <li><a href="/assistants" class="hover:text-white">AI Assistants</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Documentation</a></li>
+                        <li><a href="#" class="hover:text-white">API</a></li>
+                        <li><a href="#" class="hover:text-white">Validators</a></li>
+                        <li><a href="#" class="hover:text-white">Network Status</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">About</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">About KAWAI</a></li>
+                        <li><a href="#" class="hover:text-white">Team</a></li>
+                        <li><a href="#" class="hover:text-white">Careers</a></li>
+                        <li><a href="#" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-10 pt-8 text-center">
+                <p>© 2025 KAWAI Network. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <div id="toast" class="toast">
+        <i class="fas fa-check-circle mr-2"></i> Copied to clipboard
+    </div>
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            const copyButtons = document.querySelectorAll('.copy-to-clipboard');
+            
+            
+            copyButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    
+                    const textElement = this.closest('.hash-container').querySelector('.hash-value');
+                    const textToCopy = textElement.textContent.trim();
+                    
+                    
+                    copyToClipboard(textToCopy);
+                });
+            });
+            
+            
+            const hashValues = document.querySelectorAll('.hash-value, .address-value');
+            hashValues.forEach(el => {
+                if (!el.classList.contains('copyable')) {
+                    
+                    el.classList.add('copyable');
+                    
+                    
+                    const icon = document.createElement('i');
+                    icon.className = 'fas fa-copy copy-icon ml-1 text-sm';
+                    el.appendChild(icon);
+                    
+                    
+                    el.addEventListener('click', function() {
+                        const textToCopy = this.textContent.trim().replace(/\s*copy\s*$/i, '');
+                        copyToClipboard(textToCopy);
+                    });
+                }
+            });
+            
+            
+            function copyToClipboard(text) {
+                navigator.clipboard.writeText(text)
+                    .then(() => {
+                        showToast();
+                    })
+                    .catch(err => {
+                        console.error('Could not copy text: ', err);
+                    });
+            }
+            
+            
+            function showToast() {
+                const toast = document.getElementById('toast');
+                toast.classList.add('show');
+                
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 3000);
+            }
+            
+            
+            document.querySelectorAll('[data-width]').forEach(el => {
+                el.style.width = `${el.dataset.width}%`;
+            });
+        });
+    </script>
+</body>
+</html>

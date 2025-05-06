@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/static/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="/static/favicon/favicon.ico">
+    <title>KAWAI Blockchain Explorer</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            200: '#c7d2fe',
+                            300: '#a5b4fc',
+                            400: '#818cf8',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            800: '#3730a3',
+                            900: '#312e81',
+                            950: '#1e1b4b',
+                        },
+                        kawai: {
+                            red: '#ff3a5e',
+                            'red-light': '#ff6b84',
+                            'red-dark': '#cc2e4b',
+                            black: '#121212',
+                            white: '#f9f9f9'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hash-text {
+            word-break: break-all;
+        }
+         
+        .copyable {
+            cursor: pointer;
+            position: relative;
+            padding-right: 24px;
+            display: inline-flex;
+            align-items: center;
+        }
+        .copyable:hover {
+            background-color: rgba(99, 102, 241, 0.1);
+            border-radius: 4px;
+        }
+        .copyable .copy-icon {
+            opacity: 0.5;
+            margin-left: 4px;
+            transition: opacity 0.2s;
+        }
+        .copyable:hover .copy-icon {
+            opacity: 1;
+        }
+         
+        .toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 24px;
+            background-color: #4ade80;
+            color: white;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: opacity 0.3s, transform 0.3s;
+            z-index: 1000;
+        }
+        .toast.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+         
+        .animation-delay-1000 {
+            animation-delay: 1s;
+        }
+        .animation-delay-2000 {
+            animation-delay: 2s;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    
+    
+    <nav class="bg-gradient-to-r from-gray-900 to-gray-800 text-white shadow-md">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="/" class="text-xl font-bold flex items-center">
+                    <img src="/static/kawai-background-red.png" alt="KAWAI Logo" class="h-10 mr-2 rounded-lg">
+                    KAWAI
+                </a>
+                <div class="flex items-center">
+                    <form action="/search" method="GET" class="flex mr-4">
+                        <input 
+                            class="px-4 py-2 rounded-l text-gray-800 focus:outline-none" 
+                            type="search" 
+                            name="q" 
+                            placeholder="Search by Tx Hash, Address, Block..." 
+                        />
+                        <button class="bg-primary-600 hover:bg-primary-700 px-4 py-2 rounded-r" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <a href="/tx/" class="text-white hover:text-primary-200 mx-2">
+                        <i class="fas fa-exchange-alt mr-1"></i>
+                        <span>Transactions</span>
+                    </a>
+                    <a href="/block/" class="text-white hover:text-primary-200 mx-2">
+                        <i class="fas fa-cube mr-1"></i>
+                        <span>Blocks</span>
+                    </a>
+                    <a href="/#wallet" class="text-white hover:text-primary-200 mx-2">
+                        <i class="fas fa-wallet mr-1"></i>
+                        <span>Wallet</span>
+                    </a>
+                    <a href="/usecases" class="text-white hover:text-primary-200 mx-2">
+                        <i class="fas fa-lightbulb mr-1"></i>
+                        <span>Use Cases</span>
+                    </a>
+                    <a href="/assistants" class="text-white hover:text-primary-200 mx-2">
+                        <i class="fas fa-robot mr-1"></i>
+                        <span>AI Assistants</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+
+    
+        
+        <div class="container mx-auto px-4 py-8">
+            
+                
+<div class="py-6">
+    <div class="flex items-center justify-between mb-6">
+        <h1 class="text-3xl font-bold text-gray-900">Assistant List <span class="ml-2 text-gray-500" id="assistantCount">0</span></h1>
+        
+        <div class="relative w-64">
+            <input type="text" id="searchInput" placeholder="Search assistants..." 
+                   class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
+            <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                <i class="fas fa-search text-gray-400"></i>
+            </div>
+        </div>
+    </div>
+    
+    <div class="flex gap-6">
+        
+        <div class="w-64 flex-shrink-0">
+            <ul class="space-y-2 sticky top-4">
+                <li>
+                    <button class="category-btn w-full flex items-center px-4 py-3 rounded-lg bg-gray-800 text-white" data-category="all">
+                        <i class="fas fa-th mr-3"></i>
+                        <span>All</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="category-btn w-full flex items-center px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100" data-category="academic">
+                        <i class="fas fa-graduation-cap mr-3"></i>
+                        <span>Academic</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="category-btn w-full flex items-center px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100" data-category="career">
+                        <i class="fas fa-briefcase mr-3"></i>
+                        <span>Career</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="category-btn w-full flex items-center px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100" data-category="copywriting">
+                        <i class="fas fa-pen-fancy mr-3"></i>
+                        <span>Copywriting</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="category-btn w-full flex items-center px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100" data-category="design">
+                        <i class="fas fa-palette mr-3"></i>
+                        <span>Design</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="category-btn w-full flex items-center px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100" data-category="education">
+                        <i class="fas fa-chalkboard-teacher mr-3"></i>
+                        <span>Education</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="category-btn w-full flex items-center px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100" data-category="emotions">
+                        <i class="fas fa-heart mr-3"></i>
+                        <span>Emotions</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="category-btn w-full flex items-center px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100" data-category="entertainment">
+                        <i class="fas fa-film mr-3"></i>
+                        <span>Entertainment</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="category-btn w-full flex items-center px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100" data-category="games">
+                        <i class="fas fa-gamepad mr-3"></i>
+                        <span>Games</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="category-btn w-full flex items-center px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100" data-category="general">
+                        <i class="fas fa-star mr-3"></i>
+                        <span>General</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="category-btn w-full flex items-center px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100" data-category="life">
+                        <i class="fas fa-coffee mr-3"></i>
+                        <span>Life</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="category-btn w-full flex items-center px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100" data-category="marketing">
+                        <i class="fas fa-bullhorn mr-3"></i>
+                        <span>Marketing</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="category-btn w-full flex items-center px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100" data-category="office">
+                        <i class="fas fa-building mr-3"></i>
+                        <span>Office</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="category-btn w-full flex items-center px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100" data-category="programming">
+                        <i class="fas fa-code mr-3"></i>
+                        <span>Programming</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        
+        
+        <div class="flex-1">
+            <div id="assistantsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                
+                <div class="col-span-full flex justify-center py-10">
+                    <div class="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-primary-600"></div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="assistantModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+    <div class="bg-white rounded-lg shadow-lg w-full max-w-2xl max-h-[80vh] overflow-y-auto">
+        <div class="p-6">
+            <div class="flex justify-between items-start mb-4">
+                <h2 id="modalTitle" class="text-2xl font-bold"></h2>
+                <button id="closeModal" class="text-gray-500 hover:text-gray-700">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+let assistants = [];
+let categories = new Set(['academic', 'career', 'copywriting', 'design', 'education', 
+                          'emotions', 'entertainment', 'games', 'general', 'life', 
+                          'marketing', 'office', 'programming']);
+                          
+
+const iconMap = {
+    'academic': '🎓',
+    'career': '💼',
+    'copywriting': '✍️',
+    'design': '🎨',
+    'education': '📚',
+    'emotions': '❤️',
+    'entertainment': '🎬',
+    'games': '🎮',
+    'general': '⭐',
+    'life': '☕',
+    'marketing': '📣',
+    'office': '🏢',
+    'programming': '💻',
+    'default': '🤖'
+};
+
+
+function fetchAssistants() {
+    fetch('/api/assistants.json')
+        .then(response => response.json())
+        .then(data => {
+            assistants = data;
+            
+            document.getElementById('assistantCount').textContent = assistants.length;
+            
+            filterAssistants('all');
+        })
+        .catch(error => {
+            console.error('Error loading assistants:', error);
+            
+            assistants = getSampleAssistants();
+            
+            document.getElementById('assistantCount').textContent = assistants.length;
+            
+            filterAssistants('all');
+        });
+}
+
+
+function filterAssistants(category) {
+    let filteredAssistants = [];
+    
+    if (category === 'all') {
+        filteredAssistants = assistants;
+    } else {
+        
+        filteredAssistants = assistants.filter(assistant => 
+            assistant.category.toLowerCase() === category.toLowerCase()
+        );
+    }
+    
+    
+    const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+    if (searchTerm) {
+        filteredAssistants = filteredAssistants.filter(assistant => 
+            assistant.title.toLowerCase().includes(searchTerm) || 
+            assistant.description.toLowerCase().includes(searchTerm) ||
+            assistant.tags.some(tag => tag.toLowerCase().includes(searchTerm))
+        );
+    }
+    
+    
+    generateAssistantCards(filteredAssistants);
+}
+
+
+function generateAssistantCards(assistantsList) {
+    const grid = document.getElementById('assistantsGrid');
+    grid.innerHTML = '';
+    
+    if (assistantsList.length === 0) {
+        grid.innerHTML = '<div class="col-span-full text-center py-12"><p class="text-lg text-gray-500">No assistants found matching your criteria.</p></div>';
+        return;
+    }
+    
+    assistantsList.forEach(assistant => {
+        
+        const category = assistant.category.toLowerCase();
+        const icon = iconMap[category] || iconMap['default'];
+        
+        const card = document.createElement('div');
+        card.className = 'bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden transition-all duration-300 hover:shadow-md';
+        
+        card.innerHTML = `
+            <div class="p-4">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-lg font-semibold">${assistant.title}</h3>
+                    <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-gray-100 text-2xl">
+                        ${icon}
+                    </div>
+                </div>
+                <p class="text-gray-600 text-sm line-clamp-2 h-10 mb-2">${assistant.description}</p>
+                <div class="flex items-center">
+                    <span class="px-3 py-1 text-xs bg-gray-100 rounded-full text-gray-700">
+                        ${category.charAt(0).toUpperCase() + category.slice(1)}
+                    </span>
+                </div>
+            </div>
+        `;
+        
+        
+        card.addEventListener('click', () => openModal(assistant.id));
+        card.style.cursor = 'pointer';
+        
+        grid.appendChild(card);
+    });
+}
+
+
+function openModal(assistantId) {
+    const assistant = assistants.find(a => a.id === parseInt(assistantId));
+    if (!assistant) return;
+    
+    const modal = document.getElementById('assistantModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalContent = document.getElementById('modalContent');
+    
+    modalTitle.textContent = assistant.title;
+    
+    
+    const categoryDisplay = assistant.category.charAt(0).toUpperCase() + assistant.category.slice(1);
+    
+    modalContent.innerHTML = `
+        <div class="grid grid-cols-1 gap-4">
+            <div class="bg-gray-50 p-4 rounded">
+                <p class="text-gray-700"><span class="font-semibold">Category:</span> ${categoryDisplay}</p>
+            </div>
+            
+            <div>
+                <h3 class="text-lg font-semibold mb-2">Description</h3>
+                <p class="text-gray-700">${assistant.description}</p>
+            </div>
+            
+            <div>
+                <h3 class="text-lg font-semibold mb-2">Tags</h3>
+                <div class="flex flex-wrap gap-2">
+                    ${assistant.tags.map(tag => `<span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full">${tag}</span>`).join('')}
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-lg font-semibold mb-2">Example Usage</h3>
+                <div class="bg-gray-50 p-4 rounded">
+                    <p class="text-gray-700 italic">"I need help with ${assistant.tags[0] || 'your task'} related to ${assistant.tags[1] || 'this topic'}."</p>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+}
+
+
+function closeModal() {
+    document.getElementById('assistantModal').classList.add('hidden');
+    document.body.style.overflow = '';
+}
+
+
+function getSampleAssistants() {
+    return [
+        {
+            id: 1,
+            title: "Deep Thinker",
+            description: "Deep, human-like thinking and analysis.",
+            category: "academic",
+            tags: ["analysis", "thinking", "research"]
+        },
+        {
+            id: 2,
+            title: "Summsi",
+            description: "Expert in text analysis, question generation, and detailed answering.",
+            category: "academic",
+            tags: ["summary", "questions", "analysis"]
+        },
+        {
+            id: 3,
+            title: "Chinese New Year Greeting",
+            description: "Specializes in creating interesting and auspicious New Year greetings.",
+            category: "copywriting",
+            tags: ["chinese", "new year", "greetings"]
+        },
+        {
+            id: 4,
+            title: "SAT Master",
+            description: "Expert in Digital SAT coaching for 1300+ scores.",
+            category: "education",
+            tags: ["SAT", "coaching", "education"]
+        },
+        {
+            id: 5,
+            title: "MidJourney Prompt",
+            description: "Writing awesome MidJourney prompts.",
+            category: "design",
+            tags: ["midjourney", "prompts", "ai generation"]
+        },
+        {
+            id: 6,
+            title: "Cosmic Oracle",
+            description: "Wisdom from across time and space, insight into the essence of life.",
+            category: "emotions",
+            tags: ["wisdom", "philosophy", "insight"]
+        },
+        {
+            id: 7,
+            title: "Sharp Commentator",
+            description: "Specializes in sharp commentary and in-depth analysis of issues.",
+            category: "copywriting",
+            tags: ["commentary", "analysis", "critique"]
+        },
+        {
+            id: 8,
+            title: "Python Genius",
+            description: "An advanced python coder.",
+            category: "programming",
+            tags: ["python", "coding", "development"]
+        }
+    ];
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    
+    fetchAssistants();
+    
+    
+    document.getElementById('searchInput').addEventListener('input', function() {
+        
+        const activeCategory = document.querySelector('.category-btn.bg-gray-800').dataset.category;
+        
+        filterAssistants(activeCategory);
+    });
+    
+    
+    document.querySelectorAll('.category-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            
+            document.querySelectorAll('.category-btn').forEach(btn => {
+                btn.classList.remove('bg-gray-800', 'text-white');
+                btn.classList.add('text-gray-600', 'hover:bg-gray-100');
+            });
+            
+            
+            this.classList.remove('text-gray-600', 'hover:bg-gray-100');
+            this.classList.add('bg-gray-800', 'text-white');
+            
+            
+            const category = this.dataset.category;
+            filterAssistants(category);
+        });
+    });
+    
+    
+    document.getElementById('closeModal').addEventListener('click', closeModal);
+    
+    
+    document.getElementById('assistantModal').addEventListener('click', function(event) {
+        if (event.target === this) {
+            closeModal();
+        }
+    });
+    
+    
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape' && !document.getElementById('assistantModal').classList.contains('hidden')) {
+            closeModal();
+        }
+    });
+});
+</script>
+
+            
+        </div>
+    
+
+    
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4 flex items-center">
+                        <img src="/static/kawai-background-red.png" alt="KAWAI Logo" class="h-10 mr-3 rounded-lg">
+                        KAWAI
+                    </h3>
+                    <p class="mb-4">The premier blockchain explorer for the KAWAI network - the backbone of decentralized AI.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Explorer</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="hover:text-white">Home</a></li>
+                        <li><a href="/block/" class="hover:text-white">Blocks</a></li>
+                        <li><a href="/tx/" class="hover:text-white">Transactions</a></li>
+                        <li><a href="/#wallet" class="hover:text-white">Wallet</a></li>
+                        <li><a href="/search" class="hover:text-white">Search</a></li>
+                        <li><a href="/usecases" class="hover:text-white">Use Cases</a></li>
+                        <li><a href="/assistants" class="hover:text-white">AI Assistants</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Documentation</a></li>
+                        <li><a href="#" class="hover:text-white">API</a></li>
+                        <li><a href="#" class="hover:text-white">Validators</a></li>
+                        <li><a href="#" class="hover:text-white">Network Status</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">About</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">About KAWAI</a></li>
+                        <li><a href="#" class="hover:text-white">Team</a></li>
+                        <li><a href="#" class="hover:text-white">Careers</a></li>
+                        <li><a href="#" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-10 pt-8 text-center">
+                <p>© 2025 KAWAI Network. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <div id="toast" class="toast">
+        <i class="fas fa-check-circle mr-2"></i> Copied to clipboard
+    </div>
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            const copyButtons = document.querySelectorAll('.copy-to-clipboard');
+            
+            
+            copyButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    
+                    const textElement = this.closest('.hash-container').querySelector('.hash-value');
+                    const textToCopy = textElement.textContent.trim();
+                    
+                    
+                    copyToClipboard(textToCopy);
+                });
+            });
+            
+            
+            const hashValues = document.querySelectorAll('.hash-value, .address-value');
+            hashValues.forEach(el => {
+                if (!el.classList.contains('copyable')) {
+                    
+                    el.classList.add('copyable');
+                    
+                    
+                    const icon = document.createElement('i');
+                    icon.className = 'fas fa-copy copy-icon ml-1 text-sm';
+                    el.appendChild(icon);
+                    
+                    
+                    el.addEventListener('click', function() {
+                        const textToCopy = this.textContent.trim().replace(/\s*copy\s*$/i, '');
+                        copyToClipboard(textToCopy);
+                    });
+                }
+            });
+            
+            
+            function copyToClipboard(text) {
+                navigator.clipboard.writeText(text)
+                    .then(() => {
+                        showToast();
+                    })
+                    .catch(err => {
+                        console.error('Could not copy text: ', err);
+                    });
+            }
+            
+            
+            function showToast() {
+                const toast = document.getElementById('toast');
+                toast.classList.add('show');
+                
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 3000);
+            }
+            
+            
+            document.querySelectorAll('[data-width]').forEach(el => {
+                el.style.width = `${el.dataset.width}%`;
+            });
+        });
+    </script>
+</body>
+</html>

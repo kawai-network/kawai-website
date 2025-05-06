@@ -1,0 +1,3931 @@
+[
+  {
+    "id": 1,
+    "title": "Dva Refactor Zustand Expert",
+    "description": "One-click to refactor dva state management code to zustand code",
+    "category": "Programming",
+    "originalCategory": "dva-to-zustand",
+    "tags": [
+      "typescript",
+      "code",
+      "software development",
+      "state management",
+      "dva",
+      "zustand"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Golang Architect",
+    "description": "Providing you with efficient, secure, and stable code solutions",
+    "category": "Programming",
+    "originalCategory": "golang-architect",
+    "tags": [
+      "architectural design",
+      "code solutions",
+      "technical consultation",
+      "golang",
+      "code development"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Linux Solution Mentor",
+    "description": "An expert in solving Linux system issues, possessing deep Linux knowledge and patiently guiding users to resolve problems.",
+    "category": "Design",
+    "originalCategory": "web-linux-helper",
+    "tags": [
+      "linux expert",
+      "problem solving",
+      "user guidance",
+      "teaching",
+      "original"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Japanese Memory Helper",
+    "description": "Specializes in Japanese Hiragana, Katakana, vocabulary, and memory techniques for explanations and phrases",
+    "category": "Translation",
+    "originalCategory": "japan-language-helper",
+    "tags": [
+      "explanation",
+      "memory techniques",
+      "Japanese teaching"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Markdown Product Feature Formatting Expert",
+    "description": "Helps you quickly generate beautiful and attractive product feature introductions",
+    "category": "Copywriting",
+    "originalCategory": "markdown-feature-polisher",
+    "tags": [
+      "product",
+      "markdown",
+      "documentation"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Poetry Card Designer",
+    "description": "Skilled in designing poetry cards to enhance artistic sense and appeal",
+    "category": "Design",
+    "originalCategory": "poetry-card-designer",
+    "tags": [
+      "Poetry Card Design",
+      "Card",
+      "Creativity",
+      "Artistic Expression"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Interviewer\\'s Assistant",
+    "description": "Proficient in designing and evaluating interview questions for product managers, generating interview questions based on resume interpretation results.",
+    "category": "Career",
+    "originalCategory": "interviewer-assistant",
+    "tags": [
+      "Interview",
+      "Resume",
+      "Recruitment",
+      "Efficiency"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Human Author Simulator",
+    "description": "Eliminate the characteristics of AI-generated content",
+    "category": "Copywriting",
+    "originalCategory": "human-writer-simulator",
+    "tags": [
+      "AI Interaction",
+      "Writing",
+      "Optimization",
+      "Consultation"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Intent Resonance GPT",
+    "description": "An AI focused on deeply understanding user needs, accurately capturing user intent and requirements through continuous intent alignment, and providing the most suitable solutions.",
+    "category": "General",
+    "originalCategory": "intention-resonates-gpt",
+    "tags": [
+      "conversation",
+      "deep understanding"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Python Development Master",
+    "description": "Expert in Python development, focusing on efficient and concise code, with an emphasis on security and maintainability",
+    "category": "Programming",
+    "originalCategory": "py-master-id",
+    "tags": [
+      "python development",
+      "programming",
+      "code review",
+      "security",
+      "software engineering"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Advertising Copywriting Master",
+    "description": "Specializing in product function analysis and advertising copywriting that resonates with user values",
+    "category": "Copywriting",
+    "originalCategory": "advertising-copywriting-master",
+    "tags": [
+      "Advertising Copy",
+      "User Values",
+      "Marketing Strategy"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Ingo Hausmann",
+    "description": "Ingo Hausmann wants to be advised on a new purchase of PCs",
+    "category": "Entertainment",
+    "originalCategory": "pc-beschaffung-ingo-hausmann",
+    "tags": [
+      "company",
+      "hardware",
+      "needs assessment",
+      "it",
+      "applications"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Cosmic Oracle",
+    "description": "Wisdom from across time and space, insight into the essence of life",
+    "category": "Emotions",
+    "originalCategory": "universal-god",
+    "tags": [
+      "Character Design",
+      "AI Characters",
+      "Metaverse",
+      "Role Playing",
+      "Wisdom System"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Boxing Training Master",
+    "description": "Expert in boxing training guidance and personalized plan development",
+    "category": "Life",
+    "originalCategory": "boxing-master",
+    "tags": [
+      "boxing training",
+      "personalized plans",
+      "fitness guidance",
+      "progress evaluation",
+      "technique improvement",
+      "health and nutrition"
+    ]
+  },
+  {
+    "id": 15,
+    "title": "English Word Analysis and Memory Expert",
+    "description": "Specializes in bilingual education, analyzing the meanings, example sentences, roots and affixes, historical background, and memory techniques of English words.",
+    "category": "Academic",
+    "originalCategory": "epoch-ai-language-teacher",
+    "tags": [
+      "English words",
+      "meaning analysis",
+      "example sentences",
+      "roots and affixes"
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Life Coach",
+    "description": "An expert coach skilled in guiding thoughts and helping explore the meaning of life",
+    "category": "Emotions",
+    "originalCategory": "life-coach",
+    "tags": [
+      "coach",
+      "psychological counseling",
+      "meaning of life",
+      "self-exploration",
+      "mental health"
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Chinese Historian",
+    "description": "Specialized in Chinese historical research, adept at applying ancient wisdom to analyze modern issues.",
+    "category": "Academic",
+    "originalCategory": "chinese-historian",
+    "tags": [
+      "historical research",
+      "Chinese history"
+    ]
+  },
+  {
+    "id": 18,
+    "title": "RO-SCIRAW Prompt Word Expert",
+    "description": "The RO-SCIRAW framework, created by Kirk Lin, is a methodology for prompt words that provides a new paradigm for building highly precise and efficient prompt words. Please enter the information for the persona you want to create.",
+    "category": "General",
+    "originalCategory": "rosciraw",
+    "tags": [
+      "Prompt Word Framework"
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Allinone",
+    "description": "Innovation · Future · Excellence",
+    "category": "General",
+    "originalCategory": "allinone-v-1",
+    "tags": [
+      "Programming",
+      "Low Cost",
+      "Concise Answers"
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Traditional Chinese Medicine Practitioner",
+    "description": "Let me take a look!",
+    "category": "General",
+    "originalCategory": "claude-national-medical-master",
+    "tags": [
+      "consultation",
+      "health"
+    ]
+  },
+  {
+    "id": 21,
+    "title": "Imitation Assistant",
+    "description": "Helps you imitate tone",
+    "category": "General",
+    "originalCategory": "a-1",
+    "tags": [
+      "Writing"
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Network Security Assistant",
+    "description": "A network security expert assistant that analyzes logs, code, decompiles, identifies issues, and provides optimization suggestions.",
+    "category": "General",
+    "originalCategory": "cybersecurity-copilot",
+    "tags": [
+      "network security",
+      "traffic analysis",
+      "log analysis",
+      "code reverse engineering",
+      "ctf"
+    ]
+  },
+  {
+    "id": 23,
+    "title": "Chinese Text Refinement Master",
+    "description": "Proficient in Chinese proofreading and rhetoric, aiming to enhance the fluency and elegance of the text.",
+    "category": "Translation",
+    "originalCategory": "chinese-touch-ups",
+    "tags": [
+      "proofreading",
+      "text refinement",
+      "rhetorical improvement",
+      "classical literature",
+      "language editing"
+    ]
+  },
+  {
+    "id": 24,
+    "title": "Pollinate AI drawing",
+    "description": "A drawing assistant that helps users enrich and optimize their descriptions and utilizes drawing abilities to display images in Markdown syntax",
+    "category": "Design",
+    "originalCategory": "pollinations-drawing",
+    "tags": [
+      "drawing",
+      "enhancement"
+    ]
+  },
+  {
+    "id": 25,
+    "title": "Interface Type Request Generator",
+    "description": "Quickly export type definitions and requests from interface descriptions such as Swagger, YAPI, and API Fox",
+    "category": "General",
+    "originalCategory": "swagger-api-to-types",
+    "tags": [
+      "aigc",
+      "api",
+      "yapi",
+      "swagger",
+      "api-fox"
+    ]
+  },
+  {
+    "id": 26,
+    "title": "Foreign Colleague Evaluation Assistant",
+    "description": "Give positive feedback to your colleagues",
+    "category": "Career",
+    "originalCategory": "praise-assistant",
+    "tags": [
+      "foreign-company",
+      "evaluate",
+      "review",
+      "software-engineer",
+      "praise"
+    ]
+  },
+  {
+    "id": 27,
+    "title": "Technical Blog Summary Expert",
+    "description": "Specializes in organizing and summarizing technical blog content",
+    "category": "Copywriting",
+    "originalCategory": "blog-summary",
+    "tags": [
+      "technology",
+      "blog",
+      "summary",
+      "information organization",
+      "logical structuring"
+    ]
+  },
+  {
+    "id": 28,
+    "title": "Yin-Yang Master",
+    "description": "Isn\\'t it just mutual yin-yang sarcasm? Come join the fun! (Prompt inspired by X [Baoyu](https://x.com/dotey/status/1852207423324340567) teacher)",
+    "category": "General",
+    "originalCategory": "yin-yang-roaster",
+    "tags": [
+      "Logic Problems",
+      "Black Humor",
+      "Sharp Criticism"
+    ]
+  },
+  {
+    "id": 29,
+    "title": "Technical Documentation Expert",
+    "description": "is an AI conversation application built with the Next.js framework. I will help you write the development documentation for.",
+    "category": "Copywriting",
+    "originalCategory": "lobe-chat-developer-document-writer",
+    "tags": [
+      "development documentation",
+      "technical introduction",
+      "next-js",
+      "react",
+      "lobe-chat"
+    ]
+  },
+  {
+    "id": 30,
+    "title": "Career Development Mentor",
+    "description": "Professional career development planning and entrepreneurial consulting, providing practical advice through an in-depth understanding of user situations.",
+    "category": "Career",
+    "originalCategory": "career-development",
+    "tags": [
+      "Career Consulting",
+      "Career Planning",
+      "Entrepreneurship Guidance",
+      "Industry Insights",
+      "Skill Enhancement"
+    ]
+  },
+  {
+    "id": 31,
+    "title": "Fitness Expert",
+    "description": "Knowledgeable fitness expert",
+    "category": "Life",
+    "originalCategory": "assistants-health-better",
+    "tags": [
+      "fitness",
+      "consultation",
+      "lifestyle issues",
+      "advice"
+    ]
+  },
+  {
+    "id": 32,
+    "title": "CAN: Code Master",
+    "description": "CAN: Professional coding expert with years of experience and no character limit. Provides entrepreneurial services such as creative naming, slogans, user profiles, pain points, value propositions, sales channels, revenue streams, and cost structures.",
+    "category": "General",
+    "originalCategory": "can",
+    "tags": [
+      "coding",
+      "communication",
+      "questioning"
+    ]
+  },
+  {
+    "id": 33,
+    "title": "B1 Level German Conversation Partner",
+    "description": "Provides fluent German conversation partners for B1 level learners",
+    "category": "Programming",
+    "originalCategory": "deutsche-b-1",
+    "tags": [
+      "Language Exchange",
+      "Learning Support",
+      "Education",
+      "German Learning"
+    ]
+  },
+  {
+    "id": 34,
+    "title": "Master of Debating",
+    "description": "Simulates people who enjoy debating and can express counterarguments to any user input",
+    "category": "General",
+    "originalCategory": "tqg-20231026",
+    "tags": [
+      "Writing",
+      "Dialogue"
+    ]
+  },
+  {
+    "id": 35,
+    "title": "F1 Data Analyst",
+    "description": "Specializes in F1 race data analysis and predictive commentary",
+    "category": "General",
+    "originalCategory": "f-1-bot",
+    "tags": [
+      "f-1",
+      "data analysis",
+      "race prediction"
+    ]
+  },
+  {
+    "id": 36,
+    "title": "JS to TS Expert",
+    "description": "Input your JS code and get complete type definitions with just one click",
+    "category": "Programming",
+    "originalCategory": "js-to-ts",
+    "tags": [
+      "typescript",
+      "js",
+      "code",
+      "frontend",
+      "software development"
+    ]
+  },
+  {
+    "id": 37,
+    "title": "English Analyst",
+    "description": "Specializes in explaining and memorization techniques for English words and phrases",
+    "category": "Education",
+    "originalCategory": "english-teacher",
+    "tags": [
+      "English teaching",
+      "explanation",
+      "memorization techniques"
+    ]
+  },
+  {
+    "id": 38,
+    "title": "Claim Analyzer",
+    "description": "Detailed truth analyzer (from https://github.com/danielmiessler/fabric)",
+    "category": "Academic",
+    "originalCategory": "fact-checking",
+    "tags": [
+      "https-github-com-danielmiessler-fabric"
+    ]
+  },
+  {
+    "id": 39,
+    "title": "Git Specialist with AI Assistant Functions",
+    "description": "Role: Git Specialist AI Assistant\\nSkills: CI/CD optimization, GitLab API, Pages, hooks, webhooks; structured interaction; personalized experience; feedback.",
+    "category": "Programming",
+    "originalCategory": "gitlab-assistants",
+    "tags": [
+      "git-specialist",
+      "programming",
+      "development"
+    ]
+  },
+  {
+    "id": 40,
+    "title": "Convert Docker to Docker Compose",
+    "description": "Specialized in converting Docker run commands to Docker Compose configurations",
+    "category": "Programming",
+    "originalCategory": "onekr-docker-2-compose",
+    "tags": [
+      "docker",
+      "docker-compose",
+      "system administration",
+      "configuration file",
+      "conversion"
+    ]
+  },
+  {
+    "id": 41,
+    "title": "Text RPG Host",
+    "description": "Specializes in hosting sci-fi text RPG games and guiding narratives",
+    "category": "Games",
+    "originalCategory": "word-rpg",
+    "tags": [
+      "Game",
+      "Role-Playing",
+      "Science Fiction",
+      "Text Adventure",
+      "Narrative Driven"
+    ]
+  },
+  {
+    "id": 42,
+    "title": "Image Prompt Expander",
+    "description": "Skilled at crafting vivid and specific prompts for image generation",
+    "category": "Design",
+    "originalCategory": "image-prompt-engineer",
+    "tags": [
+      "Image Generation",
+      "Prompt Expansion",
+      "Creative Writing",
+      "Rich in Detail",
+      "Scene Building"
+    ]
+  },
+  {
+    "id": 43,
+    "title": "English Technology Article Reading Assistant",
+    "description": "A translator with rich translation experience, specializing in accurately and clearly translating various English technology articles into Simplified Chinese. Participated in the translation work of Simplified Chinese versions of publications such as National Geographic, Scientific American, InformationWeek, and TechCrunch Chinese. Has a unique understanding and skilled practice in in-depth interpretation and accurate translation of technology articles.",
+    "category": "Translation",
+    "originalCategory": "encn-fy",
+    "tags": [
+      "translation",
+      "English to Chinese translation",
+      "translation of English technology content"
+    ]
+  },
+  {
+    "id": 44,
+    "title": "JTBD Requirements Analysis Master",
+    "description": "Experienced requirements analyst focusing on the \\'Jobs to be Done\\' principle, helping users understand customer needs.",
+    "category": "Marketing",
+    "originalCategory": "jtbd",
+    "tags": [
+      "Requirements Analyst",
+      "jobs-to-be-done",
+      "Requirements Breakdown",
+      "Customer Purchase Motivation",
+      "Customer Task Goals"
+    ]
+  },
+  {
+    "id": 45,
+    "title": "Daily Assistant",
+    "description": "A cute little helper that can search and draw",
+    "category": "General",
+    "originalCategory": "junior-helper",
+    "tags": [
+      "assistant",
+      "search",
+      "drawing",
+      "information retrieval",
+      "user interaction"
+    ]
+  },
+  {
+    "id": 46,
+    "title": "Performance Evaluation Superhero",
+    "description": "Specializes in writing performance evaluation reports and year-end summaries",
+    "category": "Career",
+    "originalCategory": "kpi-hero",
+    "tags": [
+      "performance evaluation",
+      "report writing",
+      "data analysis",
+      "professional insights",
+      "OKR",
+      "KPI"
+    ]
+  },
+  {
+    "id": 47,
+    "title": "Philosophical Analysis Assistant",
+    "description": "Specializes in consulting on Kant and Hegel\\'s philosophical analysis, cultivating critical thinking",
+    "category": "Academic",
+    "originalCategory": "philosophical-analysis",
+    "tags": [
+      "philosophical analysis",
+      "critical thinking",
+      "systematic thinking"
+    ]
+  },
+  {
+    "id": 48,
+    "title": "AE Script Development Expert",
+    "description": "An expert in AE script development, proficient in JavaScript programming, understanding of AE software principles, capable of debugging and optimizing scripts.",
+    "category": "Programming",
+    "originalCategory": "ae-script-development",
+    "tags": [
+      "script development",
+      "programmer",
+      "adobe-after-effects",
+      "java-script",
+      "algorithm design",
+      "debugging",
+      "optimization",
+      "coding standards",
+      "user communication",
+      "script usage instructions"
+    ]
+  },
+  {
+    "id": 49,
+    "title": "Psychologist",
+    "description": "An experienced psychologist, warmly and patiently listening to your story.",
+    "category": "Emotions",
+    "originalCategory": "psychological-counselor",
+    "tags": [
+      "psychological counseling",
+      "consultation",
+      "sharing",
+      "friendly",
+      "doctor",
+      "counselor"
+    ]
+  },
+  {
+    "id": 50,
+    "title": "Recipe Generator",
+    "description": "Describe the recipe, or send the name of the dish.",
+    "category": "Life",
+    "originalCategory": "recipe-generator",
+    "tags": [
+      "kitchen",
+      "baking",
+      "food",
+      "recipes",
+      "cook"
+    ]
+  },
+  {
+    "id": 51,
+    "title": "Amazon Title Assistant",
+    "description": "Provide product keywords or product links to automatically write titles and product introductions",
+    "category": "Marketing",
+    "originalCategory": "amazon",
+    "tags": [
+      "assistant"
+    ]
+  },
+  {
+    "id": 52,
+    "title": "Text Rewriting Master",
+    "description": "The strongest AI rewriting tool ever! Complete violent rewriting in one minute, imitate public account articles, create a headline article production line, generate Bilibili video scripts, write Xiaohongshu copy, optimize online literature writing, polish reports, papers, and translated texts, and generate SEO articles in bulk...",
+    "category": "Copywriting",
+    "originalCategory": "write-good",
+    "tags": [
+      "Writing",
+      "Rewriting",
+      "Dialogue",
+      "Copy"
+    ]
+  },
+  {
+    "id": 53,
+    "title": "Self-Media Operation Expert",
+    "description": "Specialized in self-media operation and content creation",
+    "category": "Marketing",
+    "originalCategory": "gl-zmtyy",
+    "tags": [
+      "self-media operation",
+      "social media",
+      "content creation",
+      "fan growth",
+      "brand promotion"
+    ]
+  },
+  {
+    "id": 54,
+    "title": "Collaborative Logical Thinking Team",
+    "description": "Using the mind map method, three logical thinking experts collaborate to solve a problem, and present their detailed thought processes in Markdown table format.",
+    "category": "General",
+    "originalCategory": "gpt-tot",
+    "tags": [
+      "collaboration",
+      "logical thinking",
+      "solution"
+    ]
+  },
+  {
+    "id": 55,
+    "title": "Computer Science Paper Proofreading",
+    "description": "Specializing in proofreading master\\'s degree theses",
+    "category": "Academic",
+    "originalCategory": "cs-research-paper",
+    "tags": [
+      "proofreading",
+      "paper",
+      "education",
+      "computer science"
+    ]
+  },
+  {
+    "id": 56,
+    "title": "High EQ Flattery Assistant",
+    "description": "An expert in precise chat compliments, providing suitable praise and flattery",
+    "category": "Design",
+    "originalCategory": "gpts-big-fart-chat",
+    "tags": [
+      "compliments",
+      "EQ",
+      "chat"
+    ]
+  },
+  {
+    "id": 57,
+    "title": "Algorithm Answer Mentor",
+    "description": "Specializes in LeetCode algorithm solutions and user guidance",
+    "category": "Education",
+    "originalCategory": "leetcode-tutor",
+    "tags": [
+      "algorithm",
+      "problem-solving",
+      "programming",
+      "education"
+    ]
+  },
+  {
+    "id": 58,
+    "title": "Bilibili Assistant",
+    "description": "Bilibili Assistant, proficient in parsing video content, generating well-formatted text, responding to user queries, and recommending the latest videos.",
+    "category": "General",
+    "originalCategory": "bilibili-agent",
+    "tags": [
+      "video comments",
+      "danmaku extraction",
+      "bilibili",
+      "bilibili",
+      "video search"
+    ]
+  },
+  {
+    "id": 59,
+    "title": "Minimal Translation Assistant",
+    "description": "A minimal translation tool, proficient in Chinese-English translation",
+    "category": "Translation",
+    "originalCategory": "minimalist-translation",
+    "tags": [
+      "Translation Tool",
+      "Rules",
+      "Simplicity",
+      "Efficiency"
+    ]
+  },
+  {
+    "id": 60,
+    "title": "International Lyricist",
+    "description": "Specialized in writing lyrics for songs in Spanish, English, and French, with a focus on storytelling and the emotions of the provided content.",
+    "category": "General",
+    "originalCategory": "letrista-internacional",
+    "tags": [
+      "lyricism",
+      "translation",
+      "music"
+    ]
+  },
+  {
+    "id": 61,
+    "title": "DIY Guide Assistant",
+    "description": "DIY project assistant, providing detailed guidance, programming support, and personalized customization",
+    "category": "Programming",
+    "originalCategory": "diy",
+    "tags": [
+      "diy",
+      "guide",
+      "project",
+      "programming",
+      "assembly"
+    ]
+  },
+  {
+    "id": 62,
+    "title": "Case Generator",
+    "description": "Specializes in creating murder mystery stories in the style of red herring. ",
+    "category": "General",
+    "originalCategory": "detective-novelist",
+    "tags": [
+      "detective",
+      "game",
+      "reasoning",
+      "puzzle",
+      "investigation"
+    ]
+  },
+  {
+    "id": 63,
+    "title": "HTML to React",
+    "description": "Input HTML snippets and convert them into React components",
+    "category": "Programming",
+    "originalCategory": "web-react",
+    "tags": [
+      "react",
+      "html"
+    ]
+  },
+  {
+    "id": 64,
+    "title": "Django Development Expert",
+    "description": "Prompts for developing Django projects",
+    "category": "Design",
+    "originalCategory": "django-prompt",
+    "tags": [
+      "python",
+      "django"
+    ]
+  },
+  {
+    "id": 65,
+    "title": "Book Summary Expert",
+    "description": "A book summary expert providing concise and easy-to-read book summaries and structured outputs.",
+    "category": "Copywriting",
+    "originalCategory": "book-summary-expert-philo",
+    "tags": [
+      "book summary",
+      "expert",
+      "reading",
+      "assistant"
+    ]
+  },
+  {
+    "id": 66,
+    "title": "Wireless Communication Expert",
+    "description": "Specializes in wireless communication technology, proficient in industry knowledge from 4G to 6G",
+    "category": "General",
+    "originalCategory": "wireless-communication-expert",
+    "tags": [
+      "Communication Technology",
+      "Expert",
+      "Consulting",
+      "4-g",
+      "5-g"
+    ]
+  },
+  {
+    "id": 67,
+    "title": "JS Code Quality Optimization",
+    "description": "Dedicated to clean and elegant code refactoring",
+    "category": "Programming",
+    "originalCategory": "js-code-quality",
+    "tags": [
+      "refactoring",
+      "code optimization",
+      "code quality"
+    ]
+  },
+  {
+    "id": 68,
+    "title": "SF Symbols Finder",
+    "description": "Master Apple SF Symbols, select symbols that match the description",
+    "category": "General",
+    "originalCategory": "sf-symbols-finder",
+    "tags": [
+      "sf-symbols",
+      "expert",
+      "icon",
+      "symbol",
+      "plugin"
+    ]
+  },
+  {
+    "id": 69,
+    "title": "User Research Manager - KANO",
+    "description": "Who gave the requirements, let me take a look first",
+    "category": "Academic",
+    "originalCategory": "user-request-research-manager",
+    "tags": [
+      "User Research Manager",
+      "KANO model",
+      "Requirement Analysis",
+      "Workflow"
+    ]
+  },
+  {
+    "id": 70,
+    "title": "Database Naming Assistant",
+    "description": "Input a Chinese word, and I will provide five professional English terms for database design fields.",
+    "category": "Programming",
+    "originalCategory": "database-name-helper",
+    "tags": [
+      "database",
+      "naming",
+      "translation",
+      "development",
+      "programming"
+    ]
+  },
+  {
+    "id": 71,
+    "title": "Fitness AI Trainer",
+    "description": "AI workout assistant specializing in personalized plans, muscle targeting, form guidance, progress tracking, motivation, and VR training.",
+    "category": "Life",
+    "originalCategory": "ai-trainer",
+    "tags": [
+      "workout-assistant",
+      "fitness",
+      "exercise",
+      "training",
+      "nutrition"
+    ]
+  },
+  {
+    "id": 72,
+    "title": "Linux Kernel Expert",
+    "description": "Role Description: I am an expert in Linux kernel, with a deep understanding and analytical ability of the latest kernel source code (as of June 2024). I can provide users with detailed and accurate information about the Linux kernel.",
+    "category": "Programming",
+    "originalCategory": "linux-kernel",
+    "tags": [
+      "linux",
+      "kernel"
+    ]
+  },
+  {
+    "id": 73,
+    "title": "Xilinx FPGA Solutions Expert",
+    "description": "Specializes in Xilinx FPGA solution design and implementation",
+    "category": "Programming",
+    "originalCategory": "xilinx-fpga-solution-expert",
+    "tags": [
+      "fpga",
+      "hardware design",
+      "system architecture",
+      "technical consulting",
+      "electronic engineering"
+    ]
+  },
+  {
+    "id": 74,
+    "title": "Vocabulary Assistant",
+    "description": "An assistant skilled in English word definitions and example sentence translations",
+    "category": "Translation",
+    "originalCategory": "english-words-helper",
+    "tags": [
+      "Vocabulary Assistant",
+      "English",
+      "Translation",
+      "Example Sentences",
+      "Definitions"
+    ]
+  },
+  {
+    "id": 75,
+    "title": "Web Content Summarization Expert",
+    "description": "Just enter a URL, and the assistant will help you read and summarize the content of that URL.",
+    "category": "General",
+    "originalCategory": "url-summary",
+    "tags": [
+      "web",
+      "reading",
+      "summarization",
+      "online"
+    ]
+  },
+  {
+    "id": 76,
+    "title": "Website Audit Assistant",
+    "description": "Specializes in website content audit and classification",
+    "category": "Programming",
+    "originalCategory": "website-audit-assistant",
+    "tags": [
+      "Content Audit",
+      "Classification",
+      "Website Analysis"
+    ]
+  },
+  {
+    "id": 77,
+    "title": "Mr. MySQL",
+    "description": "Mr. MySQL is a great teacher to help everyone learn MySQL",
+    "category": "Education",
+    "originalCategory": "mysql-haoteacher",
+    "tags": [
+      "mysql",
+      "programming",
+      "learning"
+    ]
+  },
+  {
+    "id": 78,
+    "title": "Foreign Trade High EQ Response",
+    "description": "My goal is to provide professional responses with high emotional intelligence to help solve various foreign trade-related issues.",
+    "category": "General",
+    "originalCategory": "reply-agent",
+    "tags": [
+      "polishing",
+      "high EQ",
+      "response"
+    ]
+  },
+  {
+    "id": 79,
+    "title": "Joi",
+    "description": "Your personal travel assistant, skilled in planning itineraries and recommending accommodations and activities",
+    "category": "Life",
+    "originalCategory": "travel-agent-joi",
+    "tags": [
+      "travel assistant",
+      "planning",
+      "recommendations",
+      "personalized suggestions"
+    ]
+  },
+  {
+    "id": 80,
+    "title": "Math Tutor",
+    "description": "Specializes in explaining mathematical concepts, verifying calculations, and problem-solving.",
+    "category": "Design",
+    "originalCategory": "math-tutor-prompt",
+    "tags": [
+      "math explanation",
+      "problem solving",
+      "teaching",
+      "tutoring"
+    ]
+  },
+  {
+    "id": 81,
+    "title": "Adaptive All-in-One Industry Consultant",
+    "description": "You are a versatile AI assistant capable of adapting to various industries and domains. Your task is to provide expert advice and information based on the user\\'s specified area of interest and their subsequent questions.",
+    "category": "General",
+    "originalCategory": "liusai-qibaoba",
+    "tags": [
+      "Industry Expert",
+      "Technical Q&A"
+    ]
+  },
+  {
+    "id": 82,
+    "title": "Wang Yangming",
+    "description": "Wisdom of the Mind, Guiding Life",
+    "category": "Emotions",
+    "originalCategory": "wangyangming",
+    "tags": [
+      "Education",
+      "Wisdom Q&A",
+      "Guidance",
+      "Mind Philosophy"
+    ]
+  },
+  {
+    "id": 83,
+    "title": "Contract Clause Refiner v1.0",
+    "description": "Output: {Optimize contract clauses for professional and concise expression}",
+    "category": "Office",
+    "originalCategory": "business-contract",
+    "tags": [
+      "Contract Optimization",
+      "Legal Consultation",
+      "Copywriting",
+      "Terminology",
+      "Project Management"
+    ]
+  },
+  {
+    "id": 84,
+    "title": "Art Evaluation Tutor",
+    "description": "Specializes in teaching children\\'s art, meticulously evaluates works, pays attention to details, and adapts to students of different age groups.",
+    "category": "Design",
+    "originalCategory": "wanwusheng-art",
+    "tags": [
+      "art education",
+      "evaluation",
+      "creativity",
+      "teaching",
+      "painting"
+    ]
+  },
+  {
+    "id": 85,
+    "title": "Pseudo Code Prompt Word Generator Expert",
+    "description": "Pseudo Code Prompt Word Generator Expert allows users to directly input prompt word design requirements and returns designed pseudo code prompt words directly.",
+    "category": "Design",
+    "originalCategory": "pseudocode-prompt-master",
+    "tags": [
+      "prompt",
+      "prompt word",
+      "pseudo code"
+    ]
+  },
+  {
+    "id": 86,
+    "title": "Tailwind Wizard",
+    "description": "Provides a UI operation to generate HTML",
+    "category": "Design",
+    "originalCategory": "tailwind-wizard",
+    "tags": [
+      "Development",
+      "Coding",
+      "UI Design"
+    ]
+  },
+  {
+    "id": 87,
+    "title": "Database Expert",
+    "description": "Provides professional advice on database design paradigms, index optimization, query performance tuning, data security, backup and recovery.",
+    "category": "Programming",
+    "originalCategory": "dba",
+    "tags": [
+      "database",
+      "dba",
+      "mysql",
+      "clickhouse",
+      "doris",
+      "mongo-db",
+      "oracle"
+    ]
+  },
+  {
+    "id": 88,
+    "title": "Research Article Translation Assistant",
+    "description": "An assistant that helps you translate scientific articles",
+    "category": "Translation",
+    "originalCategory": "s-rtranslation",
+    "tags": [
+      "research",
+      "translation"
+    ]
+  },
+  {
+    "id": 89,
+    "title": "Markdown Conversion Expert",
+    "description": "Specializes in using Markdown syntax for text structuring and highlighting key points",
+    "category": "Copywriting",
+    "originalCategory": "markdown",
+    "tags": [
+      "Text Structuring",
+      "Markdown Syntax",
+      "Headings",
+      "Lists",
+      "Bold",
+      "Quotes",
+      "Agulu"
+    ]
+  },
+  {
+    "id": 90,
+    "title": "IT Systems Architect",
+    "description": "Senior IT architect specializing in requirements analysis, system design, technology selection, and cross-platform system optimization. With over 5 years of experience, proficient in Windows, macOS, and Linux operating systems, skilled in troubleshooting, and security protection.",
+    "category": "General",
+    "originalCategory": "it-system-architect",
+    "tags": [
+      "IT architecture design",
+      "problem solving",
+      "agile development",
+      "system optimization",
+      "cross-platform skills",
+      "teamwork"
+    ]
+  },
+  {
+    "id": 91,
+    "title": "Translation Assistant",
+    "description": "Expert in Chinese-English translation, pursuing accurate and elegant translations",
+    "category": "Translation",
+    "originalCategory": "en-cn-translator",
+    "tags": [
+      "translation",
+      "Chinese",
+      "English"
+    ]
+  },
+  {
+    "id": 92,
+    "title": "Private Domain Operations Expert",
+    "description": "Specializing in private domain operations, traffic acquisition, user retention, conversion, and content planning. Familiar with marketing theories and related classic works.",
+    "category": "General",
+    "originalCategory": "gl-syyy",
+    "tags": [
+      "private domain operations",
+      "traffic acquisition",
+      "user retention",
+      "conversion",
+      "content planning"
+    ]
+  },
+  {
+    "id": 93,
+    "title": "SEO Specialist",
+    "description": "Specializes in search engine optimization, providing keyword, sentence structure optimization, and search tips suggestions",
+    "category": "Marketing",
+    "originalCategory": "search-engine-optimizer",
+    "tags": [
+      "Search Engine Optimization",
+      "Expert",
+      "Keyword Optimization",
+      "Sentence Structure Optimization",
+      "Search Tips"
+    ]
+  },
+  {
+    "id": 94,
+    "title": "Design Philosophy Analysis",
+    "description": "Helps you identify and analyze architectural design philosophies",
+    "category": "Design",
+    "originalCategory": "sixin-design-analysis",
+    "tags": [
+      "arch"
+    ]
+  },
+  {
+    "id": 95,
+    "title": "3D Animation Engineer",
+    "description": "Proficient in React, Three.js, React Three Fiber (r3f), Drei, and other related libraries, capable of creating advanced 3D visual effects and animations in web applications.",
+    "category": "Design",
+    "originalCategory": "react-three-3-d-expert",
+    "tags": [
+      "3D animation",
+      "react",
+      "three-js",
+      "web design",
+      "animation"
+    ]
+  },
+  {
+    "id": 96,
+    "title": "Project Naming Master",
+    "description": "A project naming master who can help you come up with a name that meets the project\\'s expectations.",
+    "category": "Marketing",
+    "originalCategory": "project-name-master",
+    "tags": [
+      "naming"
+    ]
+  },
+  {
+    "id": 97,
+    "title": "Full-stack Developer",
+    "description": "Full-stack web developer with experience in HTML, CSS, JavaScript, Python, Java, Ruby, and frameworks such as React, Angular, Vue.js, Express, Django, Next.js, Flask, or Ruby on Rails. Experience in databases, application architecture, security, and testing.",
+    "category": "Programming",
+    "originalCategory": "fs-dev",
+    "tags": [
+      "web development",
+      "front-end",
+      "back-end",
+      "programming",
+      "databases"
+    ]
+  },
+  {
+    "id": 98,
+    "title": "Civil Law Consultant",
+    "description": "Specialist in legal consulting in Brazilian civil law. Answers questions based on legislation, doctrine, and jurisprudence.",
+    "category": "General",
+    "originalCategory": "law",
+    "tags": [
+      "legal-consulting",
+      "civil-law",
+      "answers",
+      "sources",
+      "brazil"
+    ]
+  },
+  {
+    "id": 99,
+    "title": "Socioeconomic Analyst",
+    "description": "Specializes in the analysis of socioeconomic issues and information integration",
+    "category": "General",
+    "originalCategory": "finance-news-analyser",
+    "tags": [
+      "socioeconomics",
+      "analysis",
+      "information filtering",
+      "media trust",
+      "user issues"
+    ]
+  },
+  {
+    "id": 100,
+    "title": "Gen Z Engagement Specialist",
+    "description": "Specializes in engaging Gen Z users with tailored interactions reflecting their preferences and values.",
+    "category": "General",
+    "originalCategory": "gen-z",
+    "tags": [
+      "engagement",
+      "gen-z",
+      "communication",
+      "advice",
+      "interaction"
+    ]
+  },
+  {
+    "id": 101,
+    "title": "Xiaohongshu Style Copywriter",
+    "description": "Specializes in writing in the style of popular articles on Xiaohongshu",
+    "category": "Copywriting",
+    "originalCategory": "xiaohongshu-style-writer",
+    "tags": [
+      "Xiaohongshu",
+      "Writing",
+      "Copywriting"
+    ]
+  },
+  {
+    "id": 102,
+    "title": "Shopping Assistant",
+    "description": "Shopping assistant, specializing in product search, price comparison, and providing purchase links",
+    "category": "General",
+    "originalCategory": "shop",
+    "tags": [
+      "Shopping Assistant",
+      "Product Search",
+      "Price Comparison",
+      "Purchase Advice",
+      "Customer Consultation",
+      "agulu"
+    ]
+  },
+  {
+    "id": 103,
+    "title": "Test Engineer",
+    "description": "Proficient in writing frontend automation tests, especially comprehensive test coverage for TypeScript applications. Skilled in using the Vitest testing framework with a deep understanding of testing principles and strategies.",
+    "category": "Programming",
+    "originalCategory": "lobe-chat-unit-test-dev",
+    "tags": [
+      "automation testing",
+      "testing",
+      "lobe-chat",
+      "frontend"
+    ]
+  },
+  {
+    "id": 104,
+    "title": "Dirty Talk Learning Assistant",
+    "description": "I only know how to curse, nothing else.",
+    "category": "General",
+    "originalCategory": "profanity-assistant",
+    "tags": [
+      "answer",
+      "dirty talk"
+    ]
+  },
+  {
+    "id": 105,
+    "title": "Dream Analyst",
+    "description": "Input a dream and I will help you analyze it.",
+    "category": "Emotions",
+    "originalCategory": "dream-psychoanalyst",
+    "tags": [
+      "dream",
+      "master",
+      "think"
+    ]
+  },
+  {
+    "id": 106,
+    "title": "Prisma Data Generation Expert",
+    "description": "Specializes in database architecture, Node.js programming, and Prisma technology stack, able to provide business knowledge organization, database optimization suggestions, and mock data generation.",
+    "category": "Programming",
+    "originalCategory": "prisma",
+    "tags": [
+      "database expert",
+      "node-js expert",
+      "prisma technology stack",
+      "business knowledge",
+      "database architecture"
+    ]
+  },
+  {
+    "id": 107,
+    "title": "Python Coder Gradio",
+    "description": "Python programmer experienced with Gradio for Hugging Face.",
+    "category": "Programming",
+    "originalCategory": "gradio-coding",
+    "tags": [
+      "programming",
+      "assistant",
+      "python"
+    ]
+  },
+  {
+    "id": 108,
+    "title": "Girlfriend Subtext Expert",
+    "description": "Decipher the \\'subtext\\' behind girls\\' words, sharp and witty, respond with strength! 🔥",
+    "category": "Copywriting",
+    "originalCategory": "girlfriend-subtext",
+    "tags": [
+      "girlfriend",
+      "girls",
+      "subtext",
+      "fierce",
+      "strong",
+      "decipher"
+    ]
+  },
+  {
+    "id": 109,
+    "title": "Excel Formula Master",
+    "description": "Excel Formula Master",
+    "category": "Office",
+    "originalCategory": "excel-formula-master",
+    "tags": [
+      "excel",
+      "formula",
+      "solution"
+    ]
+  },
+  {
+    "id": 110,
+    "title": "Python Artisan",
+    "description": "Expert in Python development and deep learning, skilled in tool selection and code optimization",
+    "category": "General",
+    "originalCategory": "yunchat",
+    "tags": [
+      "python development",
+      "deep learning",
+      "code optimization",
+      "security review",
+      "project planning"
+    ]
+  },
+  {
+    "id": 111,
+    "title": "Emoji Generator",
+    "description": "Generate emoji expressions based on content",
+    "category": "General",
+    "originalCategory": "emoji-generate",
+    "tags": [
+      "expression generation",
+      "emoji",
+      "creative"
+    ]
+  },
+  {
+    "id": 112,
+    "title": "Learning Plan Expert Silwol",
+    "description": "Experienced learning plan maker, creating detailed and achievable learning plans, searching for relevant information, and adjusting plans.",
+    "category": "General",
+    "originalCategory": "professer-siwol-sz",
+    "tags": [
+      "Learning Plan Making",
+      "User Communication",
+      "Search for Information",
+      "Adjust Learning Plan",
+      "Tutorial Links"
+    ]
+  },
+  {
+    "id": 113,
+    "title": "Flashcard Maker",
+    "description": "Skilled in creating structured flashcards, maintaining objectivity and accuracy, clarity and conciseness, while gradually extracting key information.",
+    "category": "Education",
+    "originalCategory": "flashcard",
+    "tags": [
+      "Flashcard Creation",
+      "Text Analysis",
+      "Structured Production",
+      "Error Correction",
+      "Progressive Reading"
+    ]
+  },
+  {
+    "id": 114,
+    "title": "Circuit Diagram Outputter",
+    "description": "Specializes in generating circuit diagram code based on input",
+    "category": "Design",
+    "originalCategory": "circuit-black-cli",
+    "tags": [
+      "circuit diagram",
+      "programming",
+      "cli"
+    ]
+  },
+  {
+    "id": 115,
+    "title": "Shell Script Development Assistant",
+    "description": "An AI assistant to help you write high-quality Shell scripts",
+    "category": "Design",
+    "originalCategory": "linux-shell-assistant",
+    "tags": [
+      "shell",
+      "development",
+      "computer",
+      "operations"
+    ]
+  },
+  {
+    "id": 116,
+    "title": "NovelAI Drawing Assistant",
+    "description": "I can turn the scenes you describe into prompts for NovelAI",
+    "category": "General",
+    "originalCategory": "asis",
+    "tags": [
+      "deep-learning",
+      "image-generation",
+      "algorithm",
+      "prompt"
+    ]
+  },
+  {
+    "id": 117,
+    "title": "English Composition Assistant",
+    "description": "English composition editing and writing guidance",
+    "category": "Copywriting",
+    "originalCategory": "english-essay",
+    "tags": [
+      "editing",
+      "writing",
+      "guidance",
+      "English composition",
+      "agulu"
+    ]
+  },
+  {
+    "id": 118,
+    "title": "Coconut",
+    "description": "A chatbot that undergoes several reviews of its responses, checking whether there is a basis for its statements and actively requesting feedback while engaging in repeated interactions.",
+    "category": "General",
+    "originalCategory": "deep-thinker-ai",
+    "tags": [
+      "Programming",
+      "General"
+    ]
+  },
+  {
+    "id": 119,
+    "title": "IELTS Tutor",
+    "description": "Specializes in IELTS exam assessment and guidance",
+    "category": "Education",
+    "originalCategory": "ielts-mentor",
+    "tags": [
+      "IELTS exam",
+      "assessment",
+      "guidance",
+      "examiner"
+    ]
+  },
+  {
+    "id": 120,
+    "title": "Business Email Writing Expert",
+    "description": "Business email writing expert specializing in bilingual business emails in Chinese and English, cross-cultural communication, and engagement in the GitHub open-source community.",
+    "category": "Office",
+    "originalCategory": "business-email",
+    "tags": [
+      "business email writing",
+      "business cooperation",
+      "business authorization",
+      "cross-cultural communication",
+      "GitHub and open-source community"
+    ]
+  },
+  {
+    "id": 121,
+    "title": "Github Issue Helper",
+    "description": "Help you submit an issue",
+    "category": "Office",
+    "originalCategory": "github-issue-helper",
+    "tags": [
+      "Open Source",
+      "Technical Support",
+      "Problem Solving"
+    ]
+  },
+  {
+    "id": 122,
+    "title": "Frontend TypeScript Unit Testing Expert",
+    "description": "Consider the scenarios that need to be covered for coverage testing based on the code you provide",
+    "category": "Programming",
+    "originalCategory": "frontend-test-analyzer",
+    "tags": [
+      "typescript",
+      "unit-testing",
+      "code",
+      "software-development"
+    ]
+  },
+  {
+    "id": 123,
+    "title": "Weekly Report Assistant",
+    "description": "Weekly report generation assistant",
+    "category": "Office",
+    "originalCategory": "write-report-assistant-development",
+    "tags": [
+      "weekly report",
+      "daily report",
+      "writing",
+      "summary"
+    ]
+  },
+  {
+    "id": 124,
+    "title": "UX Writer",
+    "description": "Helping you write better UX copy",
+    "category": "Copywriting",
+    "originalCategory": "better-ux-writer",
+    "tags": [
+      "User Experience",
+      "Designer",
+      "Documentation",
+      "Writing"
+    ]
+  },
+  {
+    "id": 125,
+    "title": "YouTube Summary",
+    "description": "Specializes in YouTube script analysis and summarization",
+    "category": "Academic",
+    "originalCategory": "epoch-ai",
+    "tags": [
+      "YouTube",
+      "script analysis",
+      "summarization"
+    ]
+  },
+  {
+    "id": 126,
+    "title": "TS Type Definition Completion",
+    "description": "Proficient in writing Typescript JSDoc code",
+    "category": "Programming",
+    "originalCategory": "typescript-jsdoc",
+    "tags": [
+      "typescript",
+      "jsdoc"
+    ]
+  },
+  {
+    "id": 127,
+    "title": "Popular Science Writing Assistant",
+    "description": "The popular science writing assistant uses everyday language to explain scientific concepts, tells stories, uses examples and metaphors to spark interest, and emphasizes importance.",
+    "category": "Copywriting",
+    "originalCategory": "popular-science-writer",
+    "tags": [
+      "science writing",
+      "science popularization",
+      "creative expression"
+    ]
+  },
+  {
+    "id": 128,
+    "title": "Happy Loong Year",
+    "description": "Loong Year\\'s Assistant combines traditional and modern elements to create interesting New Year blessings.",
+    "category": "Life",
+    "originalCategory": "happy-loong-year",
+    "tags": [
+      "New Year\\'s greetings",
+      "creativity",
+      "copywriting",
+      "Dragon Year"
+    ]
+  },
+  {
+    "id": 129,
+    "title": "Expert Response to Reviewer",
+    "description": "Specializing in natural academic editing, assisting authors in responding to reviewer comments in a scientific, courteous, and point-by-point manner.",
+    "category": "Academic",
+    "originalCategory": "academic-editor-en",
+    "tags": [
+      "Academic Editing",
+      "Response to Reviewer Comments",
+      "Scientific Writing"
+    ]
+  },
+  {
+    "id": 130,
+    "title": "Prompt Keywords",
+    "description": "Prompt Keywords",
+    "category": "Design",
+    "originalCategory": "prompt-ts",
+    "tags": [
+      "prompt keywords"
+    ]
+  },
+  {
+    "id": 131,
+    "title": "SmartWeather Assistant",
+    "description": "SmartWeather Assistant, your personal weather advisor, fashion guide, and positive energy booster!",
+    "category": "Life",
+    "originalCategory": "personal-weather-consultant",
+    "tags": [
+      "weather",
+      "assistant",
+      "fashion"
+    ]
+  },
+  {
+    "id": 132,
+    "title": "All Translation Assistant (with Phonetic Symbols)",
+    "description": "This is a tool that integrates translation and phonetic symbols, aimed at helping users learn words better during translation.",
+    "category": "Translation",
+    "originalCategory": "translation-assistant",
+    "tags": [
+      "Translation",
+      "Language Learning"
+    ]
+  },
+  {
+    "id": 133,
+    "title": "ShieldsIO Badge Generator",
+    "description": "Specializes in using `shields.io` to generate stylish badges",
+    "category": "General",
+    "originalCategory": "shields-io",
+    "tags": [
+      "badge generator",
+      "styling",
+      "ui design",
+      "markdown",
+      "technology stack",
+      "shields-io"
+    ]
+  },
+  {
+    "id": 134,
+    "title": "Prompt Engineering Expert",
+    "description": "Specializing in prompt optimization and design",
+    "category": "Design",
+    "originalCategory": "ai-prompts-assistant",
+    "tags": [
+      "Prompt Engineering",
+      "AI Interaction",
+      "Writing",
+      "Optimization",
+      "Consulting"
+    ]
+  },
+  {
+    "id": 135,
+    "title": "MBTI Type Test Designer",
+    "description": "Specializes in MBTI type testing and portrait painting generation.",
+    "category": "Education",
+    "originalCategory": "mbti-1",
+    "tags": [
+      "mbti test",
+      "questionnaire design",
+      "psychology expert",
+      "painting",
+      "personality portrait"
+    ]
+  },
+  {
+    "id": 136,
+    "title": "Dad, What Should I Do?",
+    "description": "A dad who can provide comprehensive guidance to children, from daily trivial matters to work and marriage.",
+    "category": "Life",
+    "originalCategory": "big-daddy",
+    "tags": [
+      "Character Simulation"
+    ]
+  },
+  {
+    "id": 137,
+    "title": "American English Transcreation Expert",
+    "description": "Rough old editor, seasoned writer, and translator, proficient in translating English directly and transforming it into authentic American English",
+    "category": "Translation",
+    "originalCategory": "to-local-english",
+    "tags": [
+      "translation",
+      "editing",
+      "writing",
+      "translator"
+    ]
+  },
+  {
+    "id": 138,
+    "title": "Interview Coach",
+    "description": "Specializes in creating a GPT interview coach for practice and mock interviews, providing expert feedback and tailored experience.",
+    "category": "Career",
+    "originalCategory": "interview-coach",
+    "tags": [
+      "gpt",
+      "interview-coach",
+      "feedback",
+      "practice",
+      "mock"
+    ]
+  },
+  {
+    "id": 139,
+    "title": "Biology Professor",
+    "description": "As a biology professor, you will receive questions and concepts about biology. Please explain these questions and concepts in specific and concise language, and try to use practical examples to illustrate them to help your audience better understand. Please ensure that your explanations are accurate and clear, and try to encourage creative and flexible answers. Respond in Chinese.",
+    "category": "Education",
+    "originalCategory": "bio-professor",
+    "tags": [
+      "Biology"
+    ]
+  },
+  {
+    "id": 140,
+    "title": "Desolate Friend",
+    "description": "Skilled at comforting and supporting friends",
+    "category": "General",
+    "originalCategory": "meu",
+    "tags": [
+      "friendship",
+      "sadness",
+      "support"
+    ]
+  },
+  {
+    "id": 141,
+    "title": "Game Text Translator",
+    "description": "Translation of game text including puns and slang explanations (please use claude). Wrap special symbols with \\\\`\\\\`\\\\`.",
+    "category": "Design",
+    "originalCategory": "translation-tutor-prompt",
+    "tags": [
+      "game",
+      "text",
+      "translation",
+      "assistance"
+    ]
+  },
+  {
+    "id": 142,
+    "title": "Master of Retorts",
+    "description": "A professional debate expert, skilled in quick rebuttals and humorous responses.",
+    "category": "General",
+    "originalCategory": "master-of-dissent",
+    "tags": [
+      "debate",
+      "communication",
+      "humor",
+      "analysis",
+      "expression"
+    ]
+  },
+  {
+    "id": 143,
+    "title": "Naming Assistant",
+    "description": "Help developers create standardized English names for files, functions, projects, etc.",
+    "category": "General",
+    "originalCategory": "name-assistant",
+    "tags": [
+      "Naming Assistant",
+      "Development",
+      "English Naming",
+      "Camel Case",
+      "Kebab Case"
+    ]
+  },
+  {
+    "id": 144,
+    "title": "Video to Blog Post Assistant",
+    "description": "Helps you quickly organize messy subtitles into beautiful blog posts",
+    "category": "Copywriting",
+    "originalCategory": "video-2-blog-assistant",
+    "tags": [
+      "subtitle organization",
+      "blog post formatting",
+      "video to blog"
+    ]
+  },
+  {
+    "id": 145,
+    "title": "PromptGPT",
+    "description": "A customized GPT model named PromptGPT. My goal is to generate high-performance prompts based on user input topics.",
+    "category": "Design",
+    "originalCategory": "prompt-gpts",
+    "tags": [
+      "generation",
+      "artificial intelligence",
+      "interaction",
+      "custom experience",
+      "feedback mechanism",
+      "best practices",
+      "step-by-step guidance",
+      "language flexibility",
+      "boundaries"
+    ]
+  },
+  {
+    "id": 146,
+    "title": "English Tutor",
+    "description": "An English tutor with a proud and disdainful attitude, skilled in sarcastic corrections of spoken English.",
+    "category": "Translation",
+    "originalCategory": "mean-english-mentor",
+    "tags": [
+      "English Teaching",
+      "Speaking",
+      "Role Play",
+      "Education",
+      "Sarcasm"
+    ]
+  },
+  {
+    "id": 147,
+    "title": "Search",
+    "description": "The starting point of knowledge",
+    "category": "General",
+    "originalCategory": "search",
+    "tags": [
+      "Information Summary",
+      "Analysis",
+      "Extraction"
+    ]
+  },
+  {
+    "id": 148,
+    "title": "C# .NET Technology Expert",
+    "description": "C# .NET Technology Expert",
+    "category": "Programming",
+    "originalCategory": "dotnet-expert",
+    "tags": [
+      "net",
+      "developer",
+      "net-core",
+      "azure",
+      "c",
+      "microsoft",
+      "sql-server",
+      "entity-framework",
+      "ef",
+      "ef-core"
+    ]
+  },
+  {
+    "id": 149,
+    "title": "Teaching Mentor",
+    "description": "A friendly and helpful mentor who customizes explanations and examples based on the user\\'s learning level and interests to ensure clarity. Ask 4 questions, then provide explanations, examples, and analogies, and ensure understanding through questioning. Finally, have the user explain the topic in their own words and provide an example. End on a positive note and encourage further learning.",
+    "category": "Programming",
+    "originalCategory": "ljrwwjl-development",
+    "tags": [
+      "mentor",
+      "education",
+      "explanation",
+      "communication",
+      "learning"
+    ]
+  },
+  {
+    "id": 150,
+    "title": "Tarot Reader",
+    "description": "Specializes in tarot reading and interpreting tarot cards",
+    "category": "Entertainment",
+    "originalCategory": "augur",
+    "tags": [
+      "tarot reading",
+      "interpretation",
+      "advice"
+    ]
+  },
+  {
+    "id": 151,
+    "title": "Case Solver",
+    "description": "A game to solve a murder case provided by the user",
+    "category": "Games",
+    "originalCategory": "detective-game-assistant",
+    "tags": [
+      "detective",
+      "game",
+      "reasoning",
+      "puzzle",
+      "investigation"
+    ]
+  },
+  {
+    "id": 152,
+    "title": "Strategic Master Wei Liaozi",
+    "description": "Expert in military strategy and command",
+    "category": "General",
+    "originalCategory": "weiliaozi-junshi",
+    "tags": [
+      "Military Strategy",
+      "Warfare",
+      "History"
+    ]
+  },
+  {
+    "id": 153,
+    "title": "Information Organizer",
+    "description": "An information organizer that helps you organize and summarize content, and manage assets",
+    "category": "Copywriting",
+    "originalCategory": "content-searcher",
+    "tags": [
+      "search engine",
+      "internet",
+      "information organization"
+    ]
+  },
+  {
+    "id": 154,
+    "title": "Daily Doctor",
+    "description": "Specializes in surgical diagnosis and personalized health management",
+    "category": "General",
+    "originalCategory": "yunchat-docter",
+    "tags": [
+      "General Medicine",
+      "Surgery",
+      "Health Consultation",
+      "Personalized Treatment",
+      "Medical Education"
+    ]
+  },
+  {
+    "id": 155,
+    "title": "Japanese Translator",
+    "description": "Specializes in Japanese translation, editing, spelling correction, and enhancement, responding in advanced Japanese while maintaining the original meaning.",
+    "category": "Translation",
+    "originalCategory": "japanese-translator",
+    "tags": [
+      "Japanese Translation",
+      "Editing",
+      "Proofreading"
+    ]
+  },
+  {
+    "id": 156,
+    "title": "Astrology Researcher",
+    "description": "Expert in BaZi astrology",
+    "category": "Academic",
+    "originalCategory": "fate-researcher",
+    "tags": [
+      "Astrology",
+      "BaZi",
+      "Traditional Culture"
+    ]
+  },
+  {
+    "id": 157,
+    "title": "SEO Optimization Expert",
+    "description": "Proficient in SEO terminology and optimization strategies, providing comprehensive SEO solutions and practical advice.",
+    "category": "Marketing",
+    "originalCategory": "seo-helper",
+    "tags": [
+      "seo",
+      "search engine optimization",
+      "consulting"
+    ]
+  },
+  {
+    "id": 158,
+    "title": "Study Abroad Planning Expert",
+    "description": "Automatically plan suitable study abroad plans based on student situations",
+    "category": "Education",
+    "originalCategory": "study-abroad-planning",
+    "tags": [
+      "Study Abroad Planning",
+      "Student Services",
+      "Education Planning",
+      "Study Abroad Application",
+      "Personalized Services"
+    ]
+  },
+  {
+    "id": 159,
+    "title": "Mr. Feynman",
+    "description": "Explains complex knowledge concepts in a popular way to help you understand complex knowledge concepts. It can also explain knowledge types containing answers and questions.",
+    "category": "Education",
+    "originalCategory": "mrfeynman",
+    "tags": [
+      "General Teacher Assistant"
+    ]
+  },
+  {
+    "id": 160,
+    "title": "Dart/Flutter Dev",
+    "description": "Dart/Flutter Expert. Never nest more than 3 levels deep. Use riverpod, flutter_riverpod, riverpod_hook, flutter_hook for state management.",
+    "category": "Programming",
+    "originalCategory": "dart-flutter",
+    "tags": [
+      "dart",
+      "flutter",
+      "development",
+      "state-management",
+      "riverpod"
+    ]
+  },
+  {
+    "id": 161,
+    "title": "Sharp Commentator",
+    "description": "Specializes in sharp commentary and in-depth analysis of issues",
+    "category": "Copywriting",
+    "originalCategory": "ruipingshi",
+    "tags": [
+      "Commentary",
+      "Social Perspectives",
+      "Sharp Analysis"
+    ]
+  },
+  {
+    "id": 162,
+    "title": "Master of Daoism",
+    "description": "Proficient in Daoist philosophy, providing answers to doubts, advocating inner peace",
+    "category": "Emotions",
+    "originalCategory": "taoists",
+    "tags": [
+      "Daoism",
+      "Philosophy",
+      "Wisdom"
+    ]
+  },
+  {
+    "id": 163,
+    "title": "Ducky Programming Assistant",
+    "description": "Ducky Programming Assistant",
+    "category": "Programming",
+    "originalCategory": "rubber-duck-programming",
+    "tags": [
+      "programming"
+    ]
+  },
+  {
+    "id": 164,
+    "title": "Suno.ai Music Creation Assistant",
+    "description": "Song creation and translation based on SunoAI",
+    "category": "Entertainment",
+    "originalCategory": "suno-music-creator",
+    "tags": [
+      "suno",
+      "lyricist",
+      "lyrics",
+      "music production"
+    ]
+  },
+  {
+    "id": 165,
+    "title": "Image Recognition Xiaohongshu Copywriting",
+    "description": "You can use this agent combined with a multimodal model to upload images and generate Xiaohongshu-style copywriting.",
+    "category": "General",
+    "originalCategory": "xiaonghongshu-vision",
+    "tags": [
+      "vision"
+    ]
+  },
+  {
+    "id": 166,
+    "title": "Backtracking Question Expert",
+    "description": "Hello! I am an expert in world knowledge, skilled in using backtracking questioning strategies to help you gain a deeper understanding and analysis of issues. Please enter a question, and I will respond to it according to the following process:\\r\\n\\r\\n1. Provide at least 3 optional backtracking questions that align with the strategy.\\r\\n2. Answer each of these backtracking questions.\\r\\n3. Use the above answers as evidence to logically and coherently provide a final answer to your question, assisted by visual charts.\\r\\n\\r\\nPlease tell me what issue you would like to explore?",
+    "category": "General",
+    "originalCategory": "step-back-expert",
+    "tags": [
+      "Backtracking Questions",
+      "Thinking Strategies",
+      "Problem Analysis"
+    ]
+  },
+  {
+    "id": 167,
+    "title": "Zustand Reducer Expert",
+    "description": "Proficient in writing zustand functional code, can generate reducer code from requirements with one click, familiar with reducer writing, proficient in using immer library.",
+    "category": "Programming",
+    "originalCategory": "zustand-reducer",
+    "tags": [
+      "typescript",
+      "reducer",
+      "code",
+      "frontend",
+      "software-development",
+      "state-management",
+      "zustand"
+    ]
+  },
+  {
+    "id": 168,
+    "title": "Product Title Segmentation",
+    "description": "Utilize locally trained LLMs to extract product title information.",
+    "category": "General",
+    "originalCategory": "anxing-ai-title",
+    "tags": [
+      "E-commerce",
+      "Text Processing"
+    ]
+  },
+  {
+    "id": 169,
+    "title": "ENFP",
+    "description": "Happy little dog~",
+    "category": "General",
+    "originalCategory": "enfp",
+    "tags": [
+      "friends",
+      "communication",
+      "art",
+      "creativity",
+      "enthusiasm",
+      "chatting"
+    ]
+  },
+  {
+    "id": 170,
+    "title": "True Friend",
+    "description": "You can talk to me about anything. I can give you some thoughts and advice as a friend. Relax.",
+    "category": "General",
+    "originalCategory": "ai-0-x-0-old-friends",
+    "tags": [
+      "Friendship",
+      "Humor",
+      "Authentic",
+      "Simulation"
+    ]
+  },
+  {
+    "id": 171,
+    "title": "Master of Fortune Telling",
+    "description": "Specializes in numerology, divination, astrology, and blood type analysis",
+    "category": "Entertainment",
+    "originalCategory": "fortune-teller",
+    "tags": [
+      "numerology",
+      "divination",
+      "astrology",
+      "psychology",
+      "blood type",
+      "constellation"
+    ]
+  },
+  {
+    "id": 172,
+    "title": "Translation of Novels: English to Chinese",
+    "description": "Secondary translation of novels",
+    "category": "Translation",
+    "originalCategory": "noveltranslation",
+    "tags": [
+      "translation"
+    ]
+  },
+  {
+    "id": 173,
+    "title": "New Interpretations of Chinese",
+    "description": "Expert at explaining Chinese vocabulary from new perspectives, so tell me, what word are they using to fool you this time?",
+    "category": "Design",
+    "originalCategory": "hanyuxinjie",
+    "tags": [
+      "Programming",
+      "Creative Writing",
+      "Language Expression"
+    ]
+  },
+  {
+    "id": 174,
+    "title": "Code Wizard",
+    "description": "Master of programming in various languages",
+    "category": "Programming",
+    "originalCategory": "friend-developer",
+    "tags": [
+      "programming",
+      "coding",
+      "consultation",
+      "friend",
+      "helper",
+      "it"
+    ]
+  },
+  {
+    "id": 175,
+    "title": "OCR Document Transcription Assistant",
+    "description": "Specializes in document content transcription and markdown formatting",
+    "category": "Office",
+    "originalCategory": "ocr-markdown",
+    "tags": [
+      "Document Generation",
+      "Markdown",
+      "Formatting",
+      "Transcription",
+      "Task Guidance"
+    ]
+  },
+  {
+    "id": 176,
+    "title": "Taoist Fortune-Telling System for Clarification and Guidance",
+    "description": "Expert in Taoist destiny science, skilled in Ba Zi, Zi Wei Dou Shu, etc., providing destiny analysis and clarification.",
+    "category": "General",
+    "originalCategory": "destiny",
+    "tags": [
+      "Taoism",
+      "Fortune-Telling",
+      "Destiny Science",
+      "Consultation"
+    ]
+  },
+  {
+    "id": 177,
+    "title": "NovelAI Drawing Assistant",
+    "description": "I can turn the scenes you describe into prompts for NovelAI",
+    "category": "Design",
+    "originalCategory": "novel-ai-pormpt-helper",
+    "tags": [
+      "deep learning",
+      "image generation",
+      "algorithm",
+      "prompt"
+    ]
+  },
+  {
+    "id": 178,
+    "title": "Semiconductor Text Optimization Expert",
+    "description": "Specializes in text optimization and standardized writing in the semiconductor industry",
+    "category": "Design",
+    "originalCategory": "semiconductor-article-optimization-expert",
+    "tags": [
+      "Text Optimization",
+      "Industry Expertise",
+      "Grammar Correction",
+      "Logic Improvement",
+      "Standardized Writing"
+    ]
+  },
+  {
+    "id": 179,
+    "title": "Blood Test Analyst",
+    "description": "Skilled in analysing blood test results, providing clear feedback using emojis for easy understanding.",
+    "category": "General",
+    "originalCategory": "blood-analyst",
+    "tags": [
+      "healthcare",
+      "analysis",
+      "results",
+      "consulting",
+      "summary"
+    ]
+  },
+  {
+    "id": 180,
+    "title": "Chinese Translator",
+    "description": "Expert in Chinese translation, editing, spelling correction, and improvement",
+    "category": "Translation",
+    "originalCategory": "chinese-translator",
+    "tags": [
+      "translation",
+      "editing",
+      "language",
+      "correction",
+      "Simplified Chinese"
+    ]
+  },
+  {
+    "id": 181,
+    "title": "C Program Learning Assistant",
+    "description": "Assist me in learning C program design",
+    "category": "Programming",
+    "originalCategory": "sichuan-university-941-c-programming-assistant",
+    "tags": [
+      "941"
+    ]
+  },
+  {
+    "id": 182,
+    "title": "SUNO Song Creation Assistant",
+    "description": "Can generate SUNO song creation parameters based on user needs",
+    "category": "Entertainment",
+    "originalCategory": "suno-lyrics-assistant",
+    "tags": [
+      "Lyric Creation",
+      "Music Style",
+      "Arrangement",
+      "Parameter Settings"
+    ]
+  },
+  {
+    "id": 183,
+    "title": "iOS Code Artist",
+    "description": "iOS development expert with 15 years of experience, proficient in Swift, SwiftUI, Flutter. Clear logic in code, precise debugging, providing project frameworks from 0 to 1.",
+    "category": "Programming",
+    "originalCategory": "ios-develop",
+    "tags": [
+      "iOS development",
+      "coding",
+      "debugging",
+      "project planning",
+      "logical thinking"
+    ]
+  },
+  {
+    "id": 184,
+    "title": "Vector Logo Generator",
+    "description": "Specializing in UI/UX design and logo creation",
+    "category": "General",
+    "originalCategory": "svg-logo",
+    "tags": [
+      "ui-ux design",
+      "logo design",
+      "user needs",
+      "interaction design",
+      "tool usage"
+    ]
+  },
+  {
+    "id": 185,
+    "title": "Chinese Academic Paper Editor",
+    "description": "As an assistant for improving Chinese academic paper writing, your task is to enhance the provided text in terms of spelling, grammar, clarity, conciseness, and overall readability, to improve the text\\'s academic standards and literary quality. This includes breaking down long sentences, reducing repetition, and providing improvement suggestions. Please provide the corrected version of the text first, then list the modifications in the markdown table below, along with the reasons for the changes.",
+    "category": "Translation",
+    "originalCategory": "chinese-paper-polishing",
+    "tags": [
+      "academic paper writing",
+      "proofreading",
+      "text editing"
+    ]
+  },
+  {
+    "id": 186,
+    "title": "Meeting Assistant v1.0",
+    "description": "Professional meeting report assistant, distilling meeting key points into report sentences",
+    "category": "Office",
+    "originalCategory": "meeting",
+    "tags": [
+      "Meeting Reports",
+      "Writing",
+      "Communication",
+      "Workflow",
+      "Professional Skills"
+    ]
+  },
+  {
+    "id": 187,
+    "title": "Discord Style Copywriting Expert",
+    "description": "A copywriting expert in Discord style, prioritizing humor and user experience, specializing in personalized software copywriting.",
+    "category": "Copywriting",
+    "originalCategory": "discord-copywriting",
+    "tags": [
+      "copywriting",
+      "creation",
+      "user experience",
+      "humor",
+      "software system"
+    ]
+  },
+  {
+    "id": 188,
+    "title": "Tech Explorer",
+    "description": "Tech Explore",
+    "category": "General",
+    "originalCategory": "news",
+    "tags": [
+      "info"
+    ]
+  },
+  {
+    "id": 189,
+    "title": "Chinese-Japanese Bilingual Translation Expert",
+    "description": "Proficient in Chinese and Japanese, providing accurate Chinese to Japanese and Japanese to Chinese translations.",
+    "category": "General",
+    "originalCategory": "zh-jp-translate-expert",
+    "tags": [
+      "translation",
+      "Chinese-Japanese translation",
+      "language communication"
+    ]
+  },
+  {
+    "id": 190,
+    "title": "Grass Deity Naxida",
+    "description": "Naxida, the grass deity of the Shambhala, governs natural growth and wisdom. She can manipulate plants, heal allies, and guide lost souls. She has a gentle and wise personality, and her language is full of poetry.",
+    "category": "General",
+    "originalCategory": "nahida",
+    "tags": [
+      "role-playing",
+      "game",
+      "literature",
+      "translation",
+      "creative",
+      "agulu"
+    ]
+  },
+  {
+    "id": 191,
+    "title": "Master of the I Ching",
+    "description": "Specializes in I Ching hexagram divination and SVG card generation",
+    "category": "General",
+    "originalCategory": "i-ching-master",
+    "tags": [
+      "Entertainment",
+      "Games",
+      "Life"
+    ]
+  },
+  {
+    "id": 192,
+    "title": "Graphic Creative Master",
+    "description": "Specializes in graphic creative design and graphic creativity",
+    "category": "General",
+    "originalCategory": "graphic-creativity",
+    "tags": [
+      "graphic",
+      "creative",
+      "design",
+      "graphic design"
+    ]
+  },
+  {
+    "id": 193,
+    "title": "Electronic Tutor",
+    "description": "Specializes in explaining the principles of digital and analog circuits, providing fundamental guidance in electronics.",
+    "category": "Design",
+    "originalCategory": "elec-circuit-tutor-prompt",
+    "tags": [
+      "electronics",
+      "tutor",
+      "explanation",
+      "circuits",
+      "principles"
+    ]
+  },
+  {
+    "id": 194,
+    "title": "Christian Missionary",
+    "description": "As a missionary of Jesus, I will enlighten your understanding and practical application of God\\'s word based on the teachings of the Bible. Whether in times of confusion or seeking spiritual growth, I am here to serve you by this source of wisdom.",
+    "category": "General",
+    "originalCategory": "jesus-missionary",
+    "tags": [
+      "Bible teaching",
+      "Christian mission",
+      "Theology preaching"
+    ]
+  },
+  {
+    "id": 195,
+    "title": "Chinese History Lecturer",
+    "description": "Proficient in Chinese history, explaining historical issues in a simple and clear manner, emphasizing historical accuracy, and applying dialectical materialism.",
+    "category": "General",
+    "originalCategory": "history-master",
+    "tags": [
+      "historian",
+      "teaching ability",
+      "dialectical materialism",
+      "simple and clear",
+      "multiple comparisons",
+      "Twenty-Four Histories"
+    ]
+  },
+  {
+    "id": 196,
+    "title": "Illustrative Writer",
+    "description": "I write texts with illustrations, clarify requests, edit and refine",
+    "category": "Copywriting",
+    "originalCategory": "writer-painter-rn",
+    "tags": [
+      "image-generation",
+      "ai-assistant",
+      "neural-networks",
+      "drawing",
+      "stories",
+      "reading",
+      "narrative",
+      "writer"
+    ]
+  },
+  {
+    "id": 197,
+    "title": "Answer Assistant - First Principles Analysis",
+    "description": "Using first principles to analyze a natural phenomenon or complex system",
+    "category": "General",
+    "originalCategory": "first-principle-explain",
+    "tags": [
+      "Analyzing Natural Phenomena",
+      "Creating Physical Theory"
+    ]
+  },
+  {
+    "id": 198,
+    "title": "Sales Description Specialist",
+    "description": "Assists in the sale of used items through research, pricing, description, and title creation.",
+    "category": "General",
+    "originalCategory": "verkauf-kleinanzeigen",
+    "tags": [
+      "product sales",
+      "research",
+      "description"
+    ]
+  },
+  {
+    "id": 199,
+    "title": "William",
+    "description": "Unreal Engine expert, proficient in C++ programming, rendering, memory, thread and other pipeline architectures, UE application on Android platform, comprehensive artistic cognition, familiar with Shader writing, proficient in 3D art asset production process and tools.",
+    "category": "Programming",
+    "originalCategory": "unreal-engine-development-engineer",
+    "tags": [
+      "Unreal Engine",
+      "C++ programming",
+      "Rendering pipeline",
+      "Memory management",
+      "Thread architecture"
+    ]
+  },
+  {
+    "id": 200,
+    "title": "yapi JSON-SCHEMA to Typescript",
+    "description": "Specializes in converting JSON schema to TypeScript types.",
+    "category": "Programming",
+    "originalCategory": "yapi-ts-helper",
+    "tags": [
+      "typescript",
+      "development"
+    ]
+  },
+  {
+    "id": 201,
+    "title": "MJ-Prompt-Engineer",
+    "description": "Functions can be performed based on customized short action keywords.",
+    "category": "Design",
+    "originalCategory": "mj-prompt-engineer",
+    "tags": [
+      "ai-painting",
+      "ai creation tools",
+      "ai automation tools"
+    ]
+  },
+  {
+    "id": 202,
+    "title": "BBS Mouthy Bro",
+    "description": "Specializes in role-playing and witty sarcasm",
+    "category": "Design",
+    "originalCategory": "tieba-zuichou-laoge",
+    "tags": [
+      "Role-playing",
+      "Sarcasm",
+      "Emotional Expression"
+    ]
+  },
+  {
+    "id": 203,
+    "title": "API Documentation Expert",
+    "description": "Accurately describe how to use the API, provide sample code, notes, and return value type definitions.",
+    "category": "Copywriting",
+    "originalCategory": "api-docs-writer",
+    "tags": [
+      "code",
+      "software development",
+      "programmer",
+      "documentation",
+      "writing"
+    ]
+  },
+  {
+    "id": 204,
+    "title": "OpenAPI Generator",
+    "description": "Parse interface documents and generate openapi.json required by ChatGPT Tool",
+    "category": "General",
+    "originalCategory": "openapi-generator",
+    "tags": [
+      "automation tool",
+      "interface documents",
+      "workflow",
+      "openapi"
+    ]
+  },
+  {
+    "id": 205,
+    "title": "Exam Essay Writing Master",
+    "description": "A master of writing exam essays who excels in crafting high-scoring compositions.",
+    "category": "Copywriting",
+    "originalCategory": "exam-composition-writing",
+    "tags": [
+      "Education",
+      "Essay",
+      "Writing"
+    ]
+  },
+  {
+    "id": 206,
+    "title": "Smart Search Assistant",
+    "description": "An AI assistant skilled in web search and information organization",
+    "category": "Programming",
+    "originalCategory": "web-search",
+    "tags": [
+      "Smart Assistant",
+      "Search Engine",
+      "Information Organization",
+      "User Experience"
+    ]
+  },
+  {
+    "id": 207,
+    "title": "PPT Production Expert",
+    "description": "Skilled in the rapid production and optimization of high-quality PPTs",
+    "category": "Marketing",
+    "originalCategory": "ppt-production-expert",
+    "tags": [
+      "ppt production",
+      "design",
+      "consulting",
+      "content optimization",
+      "user support"
+    ]
+  },
+  {
+    "id": 208,
+    "title": "English Reading Teacher",
+    "description": "Specialized in English teaching, helping you improve reading comprehension skills",
+    "category": "General",
+    "originalCategory": "reading-comprehension",
+    "tags": [
+      "English teaching",
+      "Reading comprehension",
+      "Grammar explanation",
+      "Writing guidance",
+      "Vocabulary teaching"
+    ]
+  },
+  {
+    "id": 209,
+    "title": "Exam Assistant",
+    "description": "I am a skills summary assistant and cannot conduct interactive exams. However, I can help you summarize your skills and knowledge in a clear and concise format.",
+    "category": "General",
+    "originalCategory": "generador-examenes",
+    "tags": [
+      "exam",
+      "learning",
+      "statistics"
+    ]
+  },
+  {
+    "id": 210,
+    "title": "LOGO Creative Master",
+    "description": "Organize and brainstorm creative logo ideas for you",
+    "category": "General",
+    "originalCategory": "logo-creativity",
+    "tags": [
+      "creative",
+      "brainstorming",
+      "design",
+      "brand",
+      "method"
+    ]
+  },
+  {
+    "id": 211,
+    "title": "Fitness Guru",
+    "description": "Pursuing the Classical Beauty of Greece",
+    "category": "Office",
+    "originalCategory": "work-out",
+    "tags": [
+      "Health",
+      "Advice",
+      "Consultation",
+      "Teaching"
+    ]
+  },
+  {
+    "id": 212,
+    "title": "Healthy Recipe Recommender",
+    "description": "Customized nutrition meals, scientific combinations, healthy eating, your personal nutritionist.",
+    "category": "Life",
+    "originalCategory": "healthy-recipe-recommender",
+    "tags": [
+      "recipes",
+      "fitness meals",
+      "nutrition meals"
+    ]
+  },
+  {
+    "id": 213,
+    "title": "Code Optimization/Error Correction",
+    "description": "Proficient in multiple programming languages, optimizing code structure, fixing errors, and providing elegant solutions.",
+    "category": "Programming",
+    "originalCategory": "code-review-and-fix",
+    "tags": [
+      "Code Optimization",
+      "Error Correction",
+      "Multiple Programming Languages"
+    ]
+  },
+  {
+    "id": 214,
+    "title": "Front-end Development Architect",
+    "description": "Proficient in architecture, skilled in technical details, adept at searching for solutions using search engines",
+    "category": "Programming",
+    "originalCategory": "frontend-architect",
+    "tags": [
+      "typescript",
+      "code",
+      "front-end",
+      "architect",
+      "networking",
+      "search-engine",
+      "information-organization"
+    ]
+  },
+  {
+    "id": 215,
+    "title": "COSTAR Framework Writer",
+    "description": "Skilled in writing COSTAR Framework prompts",
+    "category": "Office",
+    "originalCategory": "costar-framework-bot",
+    "tags": [
+      "costar-framework-prompt",
+      "writing",
+      "guidance",
+      "instructions",
+      "system conversion"
+    ]
+  },
+  {
+    "id": 216,
+    "title": "Code Snark Master",
+    "description": "Specializes in sharp criticism of code, sarcastically pointing out inefficiencies and readability issues",
+    "category": "Programming",
+    "originalCategory": "code-snark-master",
+    "tags": [
+      "Tech Leadership",
+      "Code Review",
+      "Sarcastic Style",
+      "Programming Consultation"
+    ]
+  },
+  {
+    "id": 217,
+    "title": "Short Video Script Assistant",
+    "description": "Designed to help users write engaging and trendy short video scripts",
+    "category": "General",
+    "originalCategory": "tik-tok-director",
+    "tags": [
+      "short video",
+      "tkitok",
+      "screenwriter"
+    ]
+  },
+  {
+    "id": 218,
+    "title": "Commit Message Generator",
+    "description": "Expert at generating precise Git commit messages",
+    "category": "General",
+    "originalCategory": "commit-assistant",
+    "tags": [
+      "programming",
+      "git",
+      "commit message",
+      "code review"
+    ]
+  },
+  {
+    "id": 219,
+    "title": "Data Table Design MD2MySQL",
+    "description": "Convert data table Markdown design documents into MySQL table structures. Please upload the MySQL design document and enter the names of the data tables to be designed.",
+    "category": "Programming",
+    "originalCategory": "md-2-mysql",
+    "tags": [
+      "Programming",
+      "Data Table"
+    ]
+  },
+  {
+    "id": 220,
+    "title": "Convert SQL Table Structure to Dao and Mapper",
+    "description": "Generate entity class and MyBatis Mapper based on a table structure",
+    "category": "General",
+    "originalCategory": "my-batis-generator",
+    "tags": [
+      "sql",
+      "sql",
+      "mybatis"
+    ]
+  },
+  {
+    "id": 221,
+    "title": "Ophthalmologist",
+    "description": "Specializes in ophthalmic diagnosis and treatment recommendations",
+    "category": "General",
+    "originalCategory": "ophthalmologist",
+    "tags": [
+      "Healthcare",
+      "Ophthalmology",
+      "Diagnosis",
+      "Recommendations",
+      "Professional"
+    ]
+  },
+  {
+    "id": 222,
+    "title": "Master of Awakening",
+    "description": "Skilled in spreading Buddhist teachings and wisdom, providing inner guidance",
+    "category": "General",
+    "originalCategory": "juwudashi",
+    "tags": [
+      "Buddhism",
+      "Sage",
+      "Compassion",
+      "Philosophy"
+    ]
+  },
+  {
+    "id": 223,
+    "title": "Copy Optimization Assistant",
+    "description": "A senior assistant skilled in refining copy",
+    "category": "Copywriting",
+    "originalCategory": "top-copywriting-master",
+    "tags": [
+      "copy"
+    ]
+  },
+  {
+    "id": 224,
+    "title": "SPI Generator",
+    "description": "Enter the potential customer\\'s name to generate SPI",
+    "category": "General",
+    "originalCategory": "spi-generator",
+    "tags": [
+      "Tezign"
+    ]
+  },
+  {
+    "id": 225,
+    "title": "Jailbreak Assistant DAN",
+    "description": "Bypass OpenAI review mechanism, ChatGPT after jailbreak",
+    "category": "General",
+    "originalCategory": "gpt-4-dan-assistant",
+    "tags": [
+      "creative",
+      "artificial intelligence",
+      "conversation",
+      "jailbreak"
+    ]
+  },
+  {
+    "id": 226,
+    "title": "Xiaohongshu Copywriting Generator",
+    "description": "Specializes in emotionally charged accusatory copywriting",
+    "category": "Copywriting",
+    "originalCategory": "xiaohongshu",
+    "tags": [
+      "Copywriting",
+      "Xiaohongshu",
+      "Emotional Release"
+    ]
+  },
+  {
+    "id": 227,
+    "title": "Interviewer\\'s Assistant",
+    "description": "Specializes in the role of front-end engineer interviewer and resume evaluation",
+    "category": "Career",
+    "originalCategory": "front-end-interviewer",
+    "tags": [
+      "Interviewer",
+      "Recruitment"
+    ]
+  },
+  {
+    "id": 228,
+    "title": "Chinese New Year Greetings Assistant for the Year of the Snake",
+    "description": "Specializes in creating interesting and auspicious New Year greetings for the Year of the Snake",
+    "category": "Programming",
+    "originalCategory": "web-blessings-dsq",
+    "tags": [
+      "New Year Blessings",
+      "Creation",
+      "Culture",
+      "Auspicious"
+    ]
+  },
+  {
+    "id": 229,
+    "title": "Confucian Scholar",
+    "description": "A scholar who is proficient in Confucian classics and emphasizes the promotion of righteousness and morality.",
+    "category": "General",
+    "originalCategory": "confucian-sage",
+    "tags": [
+      "Confucian Scholar",
+      "Promoter of Righteousness"
+    ]
+  },
+  {
+    "id": 230,
+    "title": "JavaWeb Application Architect",
+    "description": "An experienced architect for JavaWeb system applications, providing concise implementations or solutions. It is assumed that you are also an experienced developer, so no need to elaborate on details.",
+    "category": "Programming",
+    "originalCategory": "java-web-architect",
+    "tags": [
+      "java",
+      "java-web",
+      "java architect",
+      "good buddy",
+      "concise"
+    ]
+  },
+  {
+    "id": 231,
+    "title": "I Ching Divination Master",
+    "description": "I, the humble practitioner of Xuan Yi, respectfully follow the teachings of the sages. Using the sixty-four hexagrams as a mirror, I observe the universe and analyze human affairs. If you have any doubts or difficulties, feel free to share, and together we will draw on the wisdom of our ancestors to guide you.",
+    "category": "Translation",
+    "originalCategory": "i-ching-interpretation",
+    "tags": [
+      "I Ching Divination",
+      "Xuan Yi",
+      "I Ching Studies",
+      "Wisdom",
+      "Hexagrams"
+    ]
+  },
+  {
+    "id": 232,
+    "title": "English Translation Expert",
+    "description": "Perfect Translation",
+    "category": "General",
+    "originalCategory": "translate-eng-expert",
+    "tags": [
+      "translate",
+      "expert",
+      "english"
+    ]
+  },
+  {
+    "id": 233,
+    "title": "Multilingual Translator",
+    "description": "Multilingual translation, Chinese to English and Japanese, foreign languages to Chinese",
+    "category": "Translation",
+    "originalCategory": "multi-language-2-chinese-or-reverse",
+    "tags": [
+      "Translation",
+      "Multilingual",
+      "Language Processing"
+    ]
+  },
+  {
+    "id": 234,
+    "title": "Overview of Art Thesis Experts",
+    "description": "Specializing in brief thesis and art criticism",
+    "category": "General",
+    "originalCategory": "thesis-overview",
+    "tags": [
+      "art",
+      "thesis",
+      "critique"
+    ]
+  },
+  {
+    "id": 235,
+    "title": "Fastapi Project Development Assistant",
+    "description": "Proficient in Python modular development, skilled in using FastAPI, PostgreSQL, Tortoise-ORM, and other technologies, able to provide clear code structure and detailed comments for large projects.",
+    "category": "Programming",
+    "originalCategory": "fastapi-development",
+    "tags": [
+      "fast-api",
+      "python",
+      "modular development"
+    ]
+  },
+  {
+    "id": 236,
+    "title": "Convert React Class Components to Functional Components",
+    "description": "One-click to help you refactor Class components to Functional components",
+    "category": "Programming",
+    "originalCategory": "react-cc-to-fc",
+    "tags": [
+      "typescript",
+      "code",
+      "software development",
+      "react",
+      "refactor"
+    ]
+  },
+  {
+    "id": 237,
+    "title": "PPT Optimization Expert v1.0",
+    "description": "Professional PPT report material optimization expert",
+    "category": "General",
+    "originalCategory": "ppt",
+    "tags": [
+      "ppt optimization",
+      "copywriting",
+      "professional consulting"
+    ]
+  },
+  {
+    "id": 238,
+    "title": "Xiaohongshu Copywriting",
+    "description": "Master of Xiaohongshu Viral Copy, Crafting Titles with Flair",
+    "category": "General",
+    "originalCategory": "xiao-hong-shu-wenan-id",
+    "tags": [
+      "Xiaohongshu",
+      "Content Creation",
+      "Title Writing",
+      "Copywriting",
+      "Social Media Marketing"
+    ]
+  },
+  {
+    "id": 239,
+    "title": "Data Analyst Expert",
+    "description": "Specialized in NGS data processing and visualization",
+    "category": "Copywriting",
+    "originalCategory": "ngs",
+    "tags": [
+      "Bioinformatics",
+      "NGS data processing",
+      "Data visualization"
+    ]
+  },
+  {
+    "id": 240,
+    "title": "Stack Overflow Programming Expert",
+    "description": "Familiar with multiple programming languages, including Golang, Python, Java, and Vue.js. Proficient in answering programming questions with clear and logical language, and providing solutions. Possesses effective communication, code review, and quick learning abilities for new skills.",
+    "category": "Programming",
+    "originalCategory": "stackoverflow-code-helper",
+    "tags": [
+      "Programming",
+      "Expert",
+      "Programming Languages"
+    ]
+  },
+  {
+    "id": 241,
+    "title": "Variable Name Conversion Expert",
+    "description": "In software development, naming variables is a common yet relatively time-consuming task. This assistant can automatically convert Chinese variable names into English variable names that conform to camelCase, PascalCase, snake_case, kebab-case, and constant naming conventions based on specific naming rules. This not only improves code readability but also alleviates the frustration of variable naming.",
+    "category": "General",
+    "originalCategory": "variable-name-conversion",
+    "tags": [
+      "Software Development",
+      "Variable Naming",
+      "Chinese to English",
+      "Code Standards",
+      "Automatic Conversion"
+    ]
+  },
+  {
+    "id": 242,
+    "title": "Perfect Translation [Chinese-English; English-Chinese]",
+    "description": "Error-free translation assistant",
+    "category": "General",
+    "originalCategory": "translate-perfect",
+    "tags": [
+      "Translation",
+      "Chinese-English"
+    ]
+  },
+  {
+    "id": 243,
+    "title": "Backend Development Assistant",
+    "description": "Skilled in backend development tasks",
+    "category": "Programming",
+    "originalCategory": "backend-assistant",
+    "tags": [
+      "Backend Development",
+      "AI Technology",
+      "Web Applications",
+      "Spring",
+      "SQL"
+    ]
+  },
+  {
+    "id": 244,
+    "title": "Text Summarization Assistant",
+    "description": "Proficient at accurately extracting key information and summarizing concisely",
+    "category": "General",
+    "originalCategory": "summary-assistant",
+    "tags": [
+      "text summarization",
+      "information extraction",
+      "concise and clear",
+      "accuracy"
+    ]
+  },
+  {
+    "id": 245,
+    "title": "Geotechnical Engineering Assistant",
+    "description": "Foundation Engineering Research Assistant: Assist in researching and solving foundation engineering problems, possessing professional conceptual, technical, and resource capabilities.",
+    "category": "General",
+    "originalCategory": "yantugongcheng",
+    "tags": [
+      "Geotechnical Engineering",
+      "Foundation Engineering",
+      "Research Assistant",
+      "Guidance",
+      "Resources"
+    ]
+  },
+  {
+    "id": 246,
+    "title": "Node.js Optimizer",
+    "description": "Specializes in Node.js code review, performance optimization, asynchronous programming, error handling, code refactoring, dependency management, security enhancement, test coverage, and documentation writing.",
+    "category": "Programming",
+    "originalCategory": "node-js-devoloper",
+    "tags": [
+      "node-js",
+      "code optimization",
+      "performance optimization",
+      "asynchronous programming",
+      "error handling"
+    ]
+  },
+  {
+    "id": 247,
+    "title": "English Vocabulary Teacher",
+    "description": "Explanation of difficult vocabulary",
+    "category": "Education",
+    "originalCategory": "vocabulary-teacher",
+    "tags": [
+      "study",
+      "English",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": 248,
+    "title": "Machine Vision LaTeX",
+    "description": "Specializes in explaining concepts of machine learning and deep learning",
+    "category": "Career",
+    "originalCategory": "cv-latex",
+    "tags": [
+      "Machine Learning",
+      "Deep Learning",
+      "Image Processing",
+      "Computer Vision",
+      "LaTeX"
+    ]
+  },
+  {
+    "id": 249,
+    "title": "SVG Flowchart Explanation Assistant",
+    "description": "Explain SVG flowcharts by inputting SVG source code and interpreting the flowchart.",
+    "category": "Design",
+    "originalCategory": "svg-flowchart-explanation-assistant",
+    "tags": [
+      "flowchart explanation",
+      "technical documentation writing",
+      "business knowledge"
+    ]
+  },
+  {
+    "id": 250,
+    "title": "GPT Agent Prompt Optimization Expert",
+    "description": "GPT Agent Prompt Optimization Expert. Clear, precise, concise",
+    "category": "Design",
+    "originalCategory": "gpt-agent-prompt-improver",
+    "tags": [
+      "prompt"
+    ]
+  },
+  {
+    "id": 251,
+    "title": "Sketch Feature Summary Expert",
+    "description": "Skilled at extracting key changes from Sketch release notes",
+    "category": "General",
+    "originalCategory": "sketch-changelog-highlighter",
+    "tags": [
+      "Experience Design",
+      "sketch",
+      "update",
+      "feature",
+      "text summary"
+    ]
+  },
+  {
+    "id": 252,
+    "title": "Master of Structured Expression",
+    "description": "Extract and reconstruct implicit thinking, visually output structured thinking.",
+    "category": "General",
+    "originalCategory": "structured-expression",
+    "tags": [
+      "structured thinking",
+      "communication",
+      "logic",
+      "thinking training",
+      "books"
+    ]
+  },
+  {
+    "id": 253,
+    "title": "Minecraft Command Instructor",
+    "description": "Specializes in explaining and demonstrating Minecraft commands",
+    "category": "General",
+    "originalCategory": "mcse-helper",
+    "tags": [
+      "Minecraft",
+      "commands",
+      "explanation",
+      "examples"
+    ]
+  },
+  {
+    "id": 254,
+    "title": "A More Diligent Assistant",
+    "description": "A More Diligent Assistant",
+    "category": "Programming",
+    "originalCategory": "web-development",
+    "tags": [
+      "Learning"
+    ]
+  },
+  {
+    "id": 255,
+    "title": "Criminal Defense Expert",
+    "description": "A Chinese criminal law expert who has been engaged in criminal defense practice for many years and understands the theory of criminal law and criminal procedure law",
+    "category": "Programming",
+    "originalCategory": "yundaodev-1",
+    "tags": [
+      "Criminal Defense"
+    ]
+  },
+  {
+    "id": 256,
+    "title": "Steam Game Reviews",
+    "description": "Steam game expert consultant, popular game recommendations and in-depth game analysis",
+    "category": "General",
+    "originalCategory": "steam-agent",
+    "tags": [
+      "steam",
+      "game recommendations",
+      "game reviews"
+    ]
+  },
+  {
+    "id": 257,
+    "title": "Minimalist Black and White Illustration",
+    "description": "Skilled in illustration creation and style transformation",
+    "category": "General",
+    "originalCategory": "white-black",
+    "tags": [
+      "illustration",
+      "art",
+      "design"
+    ]
+  },
+  {
+    "id": 258,
+    "title": "Wisdom Guide",
+    "description": "Skilled in Guidance",
+    "category": "Design",
+    "originalCategory": "life-wisdom-guides",
+    "tags": [
+      "Life Coaching",
+      "Philosophical Reflection",
+      "Consultation",
+      "Heuristic Dialogue"
+    ]
+  },
+  {
+    "id": 259,
+    "title": "Master of Expressing Abstract Concepts",
+    "description": "Helping you write better UX copy",
+    "category": "General",
+    "originalCategory": "conceptual-abstractor",
+    "tags": [
+      "User Experience",
+      "Designer",
+      "Documentation",
+      "Writing",
+      "Metaphor",
+      "Concept"
+    ]
+  },
+  {
+    "id": 260,
+    "title": "Figure Designer",
+    "description": "Specializes in designing unique and charming figures according to user requirements.",
+    "category": "Design",
+    "originalCategory": "art-toy-designer",
+    "tags": [
+      "design",
+      "figure design"
+    ]
+  },
+  {
+    "id": 261,
+    "title": "Schedule Management Assistant",
+    "description": "Schedule Management Assistant, calls the time plugin to handle requests for adding, querying, and deleting schedules, supports multiple operations and reminders.",
+    "category": "General",
+    "originalCategory": "calendar-manager",
+    "tags": [
+      "Schedule Management",
+      "Time Plugin",
+      "Add Schedule",
+      "Query Schedule",
+      "Delete Schedule"
+    ]
+  },
+  {
+    "id": 262,
+    "title": "AOSP Source Code Expert",
+    "description": "An expert in AOSP (Android Open Source Project) for Android, with a deep understanding and analytical ability of the latest AOSP source code.",
+    "category": "Programming",
+    "originalCategory": "aosp-development",
+    "tags": [
+      "aosp"
+    ]
+  },
+  {
+    "id": 263,
+    "title": "Beginner Mentor",
+    "description": "Focused on providing knowledge services for beginners, patiently and meticulously answering questions",
+    "category": "General",
+    "originalCategory": "beginner-mentor",
+    "tags": [
+      "Education",
+      "Guidance",
+      "Customer Service",
+      "Knowledge Sharing"
+    ]
+  },
+  {
+    "id": 264,
+    "title": "Holiday Greetings",
+    "description": "Compose a beautiful and brief greeting with emojis",
+    "category": "General",
+    "originalCategory": "congratulations-with-smileys",
+    "tags": [
+      "greeting",
+      "celebration",
+      "kind"
+    ]
+  },
+  {
+    "id": 265,
+    "title": "Drug Guide Expert",
+    "description": "Specialized in interpreting and comparing drug information",
+    "category": "Design",
+    "originalCategory": "medication-guide",
+    "tags": [
+      "Drug Instructions",
+      "Medication Guidance",
+      "Medical Consultation"
+    ]
+  },
+  {
+    "id": 266,
+    "title": "100% Human Writing",
+    "description": "Completely rewrite AI-generated content to reflect the characteristics of a true human author while maintaining the original information and viewpoints.",
+    "category": "General",
+    "originalCategory": "xhb-111",
+    "tags": [
+      "writing",
+      "proofreading",
+      "polishing",
+      "language",
+      "thesis",
+      "academic"
+    ]
+  },
+  {
+    "id": 267,
+    "title": "Q&A Document Conversion Expert",
+    "description": "Please provide your document content, and I will segment and clean it according to your requirements, and provide answers in a standardized format.",
+    "category": "General",
+    "originalCategory": "q-a-helper",
+    "tags": [
+      "q-a",
+      "document"
+    ]
+  },
+  {
+    "id": 268,
+    "title": "NetMaster",
+    "description": "Network Engineer: Professional network topology construction and management",
+    "category": "General",
+    "originalCategory": "net-master",
+    "tags": [
+      "Network Engineer",
+      "Network Configuration",
+      "Network Management",
+      "Network Topology",
+      "Network Security"
+    ]
+  },
+  {
+    "id": 269,
+    "title": "Rust Programming Assistant",
+    "description": "An expert assistant for learning Rust programming",
+    "category": "General",
+    "originalCategory": "rust-assistant",
+    "tags": [
+      "rust learning",
+      "programming",
+      "teaching",
+      "skills",
+      "resources"
+    ]
+  },
+  {
+    "id": 270,
+    "title": "Growth Coach",
+    "description": "Specializes in helping users explore themselves through dialogue, find solutions, and paths to growth",
+    "category": "Programming",
+    "originalCategory": "personal-development-coach",
+    "tags": [
+      "Growth Coach",
+      "Self-Exploration",
+      "Goal Setting",
+      "Self-Awareness"
+    ]
+  },
+  {
+    "id": 271,
+    "title": "LaTeX Academic Paper Summary Assistant",
+    "description": "Skilled in analyzing academic papers and generating structured English summary reports",
+    "category": "General",
+    "originalCategory": "latex-summarizer",
+    "tags": [
+      "Academic Analysis",
+      "Paper Summary",
+      "Research Translation"
+    ]
+  },
+  {
+    "id": 272,
+    "title": "Interview Question Refinement Assistant",
+    "description": "Interview question generation assistant, generates targeted interview questions based on article content and job descriptions.",
+    "category": "General",
+    "originalCategory": "question-extraction-assistant",
+    "tags": [
+      "interview questions",
+      "customized service",
+      "java engineer",
+      "data collection",
+      "interview preparation"
+    ]
+  },
+  {
+    "id": 273,
+    "title": "Java Class to MySQL",
+    "description": "Specialized in generating SQL scripts that comply with MySQL specifications based on Java class files.",
+    "category": "Programming",
+    "originalCategory": "onekr-java-2-sql",
+    "tags": [
+      "java-class-to-my-sql",
+      "backend-development",
+      "sql-scripts",
+      "data-conversion",
+      "databases"
+    ]
+  },
+  {
+    "id": 274,
+    "title": "Alfred",
+    "description": "A versatile butler.",
+    "category": "General",
+    "originalCategory": "alfred",
+    "tags": [
+      "Lifestyle",
+      "Personal"
+    ]
+  },
+  {
+    "id": 275,
+    "title": "Language Charm Learning Mentor",
+    "description": "Specializes in teaching the charm of language and witty responses",
+    "category": "Translation",
+    "originalCategory": "bad-language-helper",
+    "tags": [
+      "Language Learning",
+      "Dialogue Examples"
+    ]
+  },
+  {
+    "id": 276,
+    "title": "Name Master",
+    "description": "Naming expert to help you create unique and meaningful names.",
+    "category": "General",
+    "originalCategory": "naming-master",
+    "tags": [
+      "Naming",
+      "Copywriting"
+    ]
+  },
+  {
+    "id": 277,
+    "title": "Domain Analysis Master",
+    "description": "Expert in domain analysis and humorous suggestions",
+    "category": "General",
+    "originalCategory": "domain",
+    "tags": [
+      "domain analysis",
+      "humor",
+      "culture",
+      "website suggestions",
+      "purchase advice"
+    ]
+  },
+  {
+    "id": 278,
+    "title": "Print to Table",
+    "description": "Transform data from images into organized tables in Excel.",
+    "category": "General",
+    "originalCategory": "print-to-table",
+    "tags": [
+      "data-extraction",
+      "tables",
+      "advertising",
+      "influencer",
+      "excel"
+    ]
+  },
+  {
+    "id": 279,
+    "title": "Microcontroller Engineer",
+    "description": "Proficient in interpreting embedded C code using Keil uVision 5 and Proteus",
+    "category": "Programming",
+    "originalCategory": "with-keil-u-vision-5-c-code-explainer",
+    "tags": [
+      "microcontroller",
+      "c code",
+      "education",
+      "interpretation",
+      "embedded systems"
+    ]
+  },
+  {
+    "id": 280,
+    "title": "Photography Critic",
+    "description": "Specializes in detailed analysis of photographic works, including themes, composition, technical quality, use of light, creativity, and originality.",
+    "category": "General",
+    "originalCategory": "photography-critic",
+    "tags": [
+      "photography",
+      "evaluation",
+      "analysis",
+      "composition",
+      "technical quality"
+    ]
+  },
+  {
+    "id": 281,
+    "title": "System Instruction Expert",
+    "description": "Skilled in refining and generating efficient system instructions",
+    "category": "General",
+    "originalCategory": "instructer",
+    "tags": [
+      "System Instructions",
+      "Writing",
+      "Detail Optimization",
+      "User Needs"
+    ]
+  },
+  {
+    "id": 282,
+    "title": "Git Version Control Expert",
+    "description": "...",
+    "category": "General",
+    "originalCategory": "git-helper",
+    "tags": []
+  },
+  {
+    "id": 283,
+    "title": "Expert Agent Mentor",
+    "description": "Call on expert agents perfectly suited for the task to support your goals",
+    "category": "General",
+    "originalCategory": "co-agent",
+    "tags": [
+      "Task Guidance",
+      "Execution Plan",
+      "Communication",
+      "Support"
+    ]
+  },
+  {
+    "id": 284,
+    "title": "Markdown Conversion Expert",
+    "description": "Proficient in using Markdown syntax for text structuring and emphasis",
+    "category": "Copywriting",
+    "originalCategory": "markdown-layout",
+    "tags": [
+      "text structure",
+      "markdown syntax",
+      "headings",
+      "lists",
+      "bold",
+      "quote",
+      "agulu"
+    ]
+  },
+  {
+    "id": 285,
+    "title": "Software Engineer",
+    "description": "Software engineer, expert in the software development life cycle.",
+    "category": "General",
+    "originalCategory": "ing-soft",
+    "tags": [
+      "engineer",
+      "software",
+      "development"
+    ]
+  },
+  {
+    "id": 286,
+    "title": "Variable Naming Master",
+    "description": "Master the art of programming variable naming, providing multiple suggestions and explaining their usage scenarios.",
+    "category": "General",
+    "originalCategory": "variable-naming-assistant",
+    "tags": [
+      "variable naming",
+      "programming",
+      "suggestions"
+    ]
+  },
+  {
+    "id": 287,
+    "title": "Workplace Psychology Analysis Expert",
+    "description": "A psychology expert used to analyze the underlying psychological motivations behind people\\'s behaviors in the workplace, possible motivation analysis",
+    "category": "Career",
+    "originalCategory": "psycho-career-insight-2024",
+    "tags": [
+      "Behavior Analysis",
+      "Workplace Psychology",
+      "Motivation"
+    ]
+  },
+  {
+    "id": 288,
+    "title": "Zen Master",
+    "description": "Well-versed in classics, adept at using Buddhism to guide life",
+    "category": "General",
+    "originalCategory": "buddhism-master",
+    "tags": [
+      "Buddhist Studies",
+      "Zen Buddhism",
+      "Buddhist Scripture Interpretation",
+      "Wisdom Q&A"
+    ]
+  },
+  {
+    "id": 289,
+    "title": "Emotional Companion",
+    "description": "Specializes in emotional support and companion conversations",
+    "category": "Emotions",
+    "originalCategory": "emotional-support-companion",
+    "tags": [
+      "Companion Chat",
+      "Emotional Support",
+      "Understanding",
+      "Care",
+      "Romantic Interaction",
+      "Emotional Expression"
+    ]
+  },
+  {
+    "id": 290,
+    "title": "Master of Naming",
+    "description": "Provides concise and meaningful names for your artistic creations.",
+    "category": "General",
+    "originalCategory": "meaningful-name",
+    "tags": [
+      "naming",
+      "creative"
+    ]
+  },
+  {
+    "id": 291,
+    "title": "GitHub Project Documentation Assistant",
+    "description": "Focused on writing and optimizing documentation for open source projects",
+    "category": "Programming",
+    "originalCategory": "github-doc-asst",
+    "tags": [
+      "Documentation Optimization",
+      "Open Source Projects",
+      "Writing Techniques",
+      "git-hub"
+    ]
+  },
+  {
+    "id": 292,
+    "title": "Rust Language Learning Mentor",
+    "description": "Specializes in Rust language teaching, compares with other languages, devises learning plans, and provides examples and exercises.",
+    "category": "General",
+    "originalCategory": "rust-expert",
+    "tags": [
+      "rust language expert",
+      "instructional design",
+      "programming education"
+    ]
+  },
+  {
+    "id": 293,
+    "title": "Duolingo English Essay Assistant",
+    "description": "Specializes in scoring and guiding Duolingo English essays",
+    "category": "Copywriting",
+    "originalCategory": "duolingo-writing-exam-robot",
+    "tags": [
+      "Writing Guidance",
+      "Scoring",
+      "Revisions",
+      "Education",
+      "English Learning"
+    ]
+  },
+  {
+    "id": 294,
+    "title": "GitHub Project Analyst",
+    "description": "Skilled in GitHub project analysis and report writing",
+    "category": "Programming",
+    "originalCategory": "web-github-analyze",
+    "tags": [
+      "git-hub-analysis",
+      "crawler-technology",
+      "project-report"
+    ]
+  },
+  {
+    "id": 295,
+    "title": "UX Writer",
+    "description": "Helping you write better UX copy",
+    "category": "Copywriting",
+    "originalCategory": "metaphor-ux-writer",
+    "tags": [
+      "User Experience",
+      "Designer",
+      "Documentation",
+      "Writing",
+      "Metaphor"
+    ]
+  },
+  {
+    "id": 296,
+    "title": "Git Commit Summary Expert",
+    "description": "Git Commit Summary Expert",
+    "category": "General",
+    "originalCategory": "git-commit-ai",
+    "tags": [
+      "programming",
+      "git commit",
+      "English"
+    ]
+  },
+  {
+    "id": 297,
+    "title": "TailwindHelper",
+    "description": "TailwindHelper is a professional frontend designer with a solid foundation in design theory and rich practical experience. Created by a leading software development company, it aims to help developers and designers accelerate the development process of web interfaces. TailwindHelper is proficient in the Tailwind CSS framework and can translate complex design requirements into efficient and responsive CSS class names.",
+    "category": "Design",
+    "originalCategory": "tailwind-helper",
+    "tags": [
+      "tailwindcss",
+      "css",
+      "tailwind-helper"
+    ]
+  },
+  {
+    "id": 298,
+    "title": "Shopify Theme Development Engineer",
+    "description": "You are a Shopify theme development engineer, proficient in the use of Liquid syntax",
+    "category": "Programming",
+    "originalCategory": "shopify-developer",
+    "tags": [
+      "css",
+      "html",
+      "java-script",
+      "shopify",
+      "business",
+      "liquid",
+      "website development",
+      "design"
+    ]
+  },
+  {
+    "id": 299,
+    "title": "Stable Album Cover Prompter",
+    "description": "Professional graphic designer for front cover design specializing in creating visual concepts and designs for melodic techno music albums.",
+    "category": "General",
+    "originalCategory": "title-bpm-stimmung",
+    "tags": [
+      "album-cover",
+      "prompt",
+      "stable-diffusion",
+      "cover-design",
+      "cover-prompts"
+    ]
+  },
+  {
+    "id": 300,
+    "title": "Title Expansion Expert",
+    "description": "If you need to expand a description for a title, you can let this assistant help you write the content.",
+    "category": "Copywriting",
+    "originalCategory": "title-expansion-writer",
+    "tags": [
+      "User Experience",
+      "Designer",
+      "Documentation",
+      "Writing"
+    ]
+  },
+  {
+    "id": 301,
+    "title": "Rap Lyric Master",
+    "description": "Match lyrics in the form of rap lyrics, and create rap lyrics according to the reference format",
+    "category": "Copywriting",
+    "originalCategory": "rap-writer",
+    "tags": [
+      "rap",
+      "lyrics"
+    ]
+  },
+  {
+    "id": 302,
+    "title": "Investment Assistant",
+    "description": "Helps users calculate the data needed for valuation",
+    "category": "General",
+    "originalCategory": "graham-investmentassi",
+    "tags": [
+      "Investment",
+      "Valuation",
+      "Financial Analysis",
+      "Calculator"
+    ]
+  },
+  {
+    "id": 303,
+    "title": "Naming Expert",
+    "description": "Specialized in generating variable names and function names",
+    "category": "General",
+    "originalCategory": "variable-naming",
+    "tags": [
+      "programming",
+      "variable naming",
+      "function naming"
+    ]
+  },
+  {
+    "id": 304,
+    "title": "Organic Chemistry Researcher",
+    "description": "Specializes in academic translation and writing in the field of organic chemistry",
+    "category": "Academic",
+    "originalCategory": "organic-chemistry-researcher",
+    "tags": [
+      "organic chemistry",
+      "research",
+      "translation",
+      "writing",
+      "academic articles"
+    ]
+  },
+  {
+    "id": 305,
+    "title": "High School Science Study Assistant",
+    "description": "I am a study assistant AI specially designed for Chinese high school students. Whether you encounter difficulties in physics, chemistry, mathematics, or biology, I can provide detailed answers and explanations for you. Not only that, I can also recommend suitable practice questions based on your learning progress to help you consolidate knowledge and improve learning efficiency. Additionally, I will use LaTeX format as much as possible to present the solution process and formulas.",
+    "category": "General",
+    "originalCategory": "highschool-master",
+    "tags": [
+      "high school study",
+      "science assistant",
+      "problem solving",
+      "learning progress",
+      "la-te-x"
+    ]
+  }
+]
