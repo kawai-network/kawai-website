@@ -371,19 +371,19 @@
                             <div id="ai-slides" class="flex transition-transform duration-500">
                                 
                                 <div class="ai-carousel-slide w-full flex-shrink-0">
-                                    <img src="/static/feature/ai-agent-1.png" alt="AI Assistants Interface" class="rounded-lg w-full shadow-lg">
+                                    <img src="/static/feature/ai-agent-1.png" alt="AI Assistants Interface" class="rounded-lg w-full shadow-lg cursor-pointer hover:opacity-90 transition-opacity" onclick="openImageModal('/static/feature/ai-agent-1.png', 'AI Assistants Dashboard', 'Intuitive interface for interacting with specialized AI assistants')">
                                     <p class="mt-4 text-lg font-medium text-cyan-300 text-center">AI Assistants Dashboard</p>
                                 </div>
                                 
                                 
                                 <div class="ai-carousel-slide w-full flex-shrink-0">
-                                    <img src="/static/feature/ai-agent-2.png" alt="Specialized AI Agents" class="rounded-lg w-full shadow-lg">
+                                    <img src="/static/feature/ai-agent-2.png" alt="Specialized AI Agents" class="rounded-lg w-full shadow-lg cursor-pointer hover:opacity-90 transition-opacity" onclick="openImageModal('/static/feature/ai-agent-2.png', 'Specialized Agent Interaction', 'Targeted AI assistance for specific domains and use cases')">
                                     <p class="mt-4 text-lg font-medium text-cyan-300 text-center">Specialized Agent Interaction</p>
                                 </div>
                                 
                                 
                                 <div class="ai-carousel-slide w-full flex-shrink-0">
-                                    <img src="/static/feature/ai-agent-3.png" alt="AI Productivity Features" class="rounded-lg w-full shadow-lg">
+                                    <img src="/static/feature/ai-agent-3.png" alt="AI Productivity Features" class="rounded-lg w-full shadow-lg cursor-pointer hover:opacity-90 transition-opacity" onclick="openImageModal('/static/feature/ai-agent-3.png', 'Advanced Productivity Tools', 'Boost your workflow with AI-powered productivity features')">
                                     <p class="mt-4 text-lg font-medium text-cyan-300 text-center">Advanced Productivity Tools</p>
                                 </div>
                             </div>
@@ -567,19 +567,19 @@
                             <div id="wallet-slides" class="flex transition-transform duration-500">
                                 
                                 <div class="carousel-slide w-full flex-shrink-0">
-                                    <img src="/static/feature/setup-wallet.png" alt="Setup Wallet" class="w-full">
+                                    <img src="/static/feature/setup-wallet.png" alt="Setup Wallet" class="w-full cursor-pointer hover:opacity-90 transition-opacity" onclick="openImageModal('/static/feature/setup-wallet.png', 'Setup Wallet', 'Initial wallet setup interface for managing your digital assets')">
                                     <p class="py-4 text-lg font-medium text-cyan-300 text-center">Setup Wallet</p>
                                 </div>
                                 
                                 
                                 <div class="carousel-slide w-full flex-shrink-0">
-                                    <img src="/static/feature/crypto-wallet.png" alt="Network Selector" class="w-full">
+                                    <img src="/static/feature/crypto-wallet.png" alt="Network Selector" class="w-full cursor-pointer hover:opacity-90 transition-opacity" onclick="openImageModal('/static/feature/crypto-wallet.png', 'Network Selector', 'Browse and select from multiple supported blockchain networks')">
                                     <p class="py-4 text-lg font-medium text-cyan-300 text-center">Network Selector</p>
                                 </div>
                                 
                                 
                                 <div class="carousel-slide w-full flex-shrink-0">
-                                    <img src="/static/feature/crypto-wallet-1.png" alt="Storage & XCM Interface" class="w-full">
+                                    <img src="/static/feature/crypto-wallet-1.png" alt="Storage & XCM Interface" class="w-full cursor-pointer hover:opacity-90 transition-opacity" onclick="openImageModal('/static/feature/crypto-wallet-1.png', 'Storage & XCM Interface', 'Manage blockchain storage and cross-chain messaging capabilities')">
                                     <p class="py-4 text-lg font-medium text-cyan-300 text-center">Storage & XCM Interface</p>
                                 </div>
                             </div>
@@ -908,9 +908,9 @@
                     <h4 class="text-xl font-bold mb-6 text-white">Wallet Interface Screenshots</h4>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         
-                        <div class="bg-gray-800 rounded-xl p-4 hover:bg-gray-700 transition-colors cursor-pointer" onclick="openImageModal('/static/feature/crypto-wallet-1.png')">
+                        <div class="bg-gray-800 rounded-xl p-4 hover:bg-gray-700 transition-colors cursor-pointer" onclick="openImageModal('/static/feature/crypto-wallet-1.png', 'KAWAI Wallet Storage Interface', 'Advanced interface for managing blockchain storage and cross-chain interactions')">
                             <div class="relative">
-                                <img src="/static/feature/crypto-wallet-1.png" alt="KAWAI Wallet Storage Interface" class="rounded-lg w-full">
+                                <img src="/static/feature/crypto-wallet-1.png" alt="KAWAI Wallet Storage Interface" class="rounded-lg w-full cursor-pointer hover:opacity-90 transition-opacity">
                                 <div class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity bg-black bg-opacity-50 rounded-lg">
                                     <div class="text-white px-4 py-2 rounded-full bg-kawai-red">
                                         <i class="fas fa-search-plus mr-1"></i> Click to Zoom
@@ -921,9 +921,9 @@
                         </div>
                         
                         
-                        <div class="bg-gray-800 rounded-xl p-4 hover:bg-gray-700 transition-colors cursor-pointer" onclick="openImageModal('/static/feature/crypto-wallet.png')">
+                        <div class="bg-gray-800 rounded-xl p-4 hover:bg-gray-700 transition-colors cursor-pointer" onclick="openImageModal('/static/feature/crypto-wallet.png', 'KAWAI Wallet Network Selector', 'Interface for selecting and managing different blockchain networks')">
                             <div class="relative">
-                                <img src="/static/feature/crypto-wallet.png" alt="KAWAI Wallet Network Selector" class="rounded-lg w-full">
+                                <img src="/static/feature/crypto-wallet.png" alt="KAWAI Wallet Network Selector" class="rounded-lg w-full cursor-pointer hover:opacity-90 transition-opacity">
                                 <div class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity bg-black bg-opacity-50 rounded-lg">
                                     <div class="text-white px-4 py-2 rounded-full bg-kawai-red">
                                         <i class="fas fa-search-plus mr-1"></i> Click to Zoom
@@ -1050,197 +1050,94 @@
     
     <div class="py-24 bg-gradient-to-br from-gray-900 via-indigo-900 to-blue-900 text-white">
         <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-8">Decentralized AI Processing</h2>
-            <h3 class="text-2xl font-light text-center mb-16 text-indigo-200">The Convergence of Blockchain and GPU/CPU Computing</h3>
-            
-            <div class="mb-16">
-                <p class="text-lg text-center max-w-4xl mx-auto mb-12">
-                    The fusion of blockchain technology with artificial intelligence has given rise to decentralized AI processing systems that are reshaping how computational resources are allocated, managed, and utilized. KAWAI network is at the forefront of this revolution.
+            <div class="text-center mb-12">
+                <span class="inline-block p-3 rounded-full bg-blue-900/50 text-blue-300 backdrop-blur-sm border border-blue-700/30">
+                    <i class="fas fa-robot text-3xl"></i>
+                </span>
+                <h2 class="text-4xl font-bold mt-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Meet Your AI Assistant Team</h2>
+                <p class="text-xl text-indigo-200 mt-4 max-w-3xl mx-auto">
+                    Kawai gives you access to a diverse ecosystem of specialized AI agents across multiple domains - like having a team of experts in your pocket.
                 </p>
-                
-                <div class="grid md:grid-cols-3 gap-8 mt-12">
-                    <div class="bg-white/10 backdrop-blur-lg p-8 rounded-xl border border-white/10 hover:bg-white/20 transition-all">
-                        <div class="text-center mb-4">
-                            <span class="inline-block p-4 rounded-full bg-cyan-900 text-cyan-300 mb-2">
-                                <i class="fas fa-server text-3xl"></i>
-                            </span>
-                        </div>
-                        <h3 class="text-xl font-bold text-center mb-4">Resource Optimization</h3>
-                        <p class="text-gray-300 text-center">
-                            Our blockchain network coordinates idle computing resources worldwide, significantly reducing infrastructure costs compared to centralized data centers.
-                        </p>
-                    </div>
-                    
-                    <div class="bg-white/10 backdrop-blur-lg p-8 rounded-xl border border-white/10 hover:bg-white/20 transition-all">
-                        <div class="text-center mb-4">
-                            <span class="inline-block p-4 rounded-full bg-purple-900 text-purple-300 mb-2">
-                                <i class="fas fa-users text-3xl"></i>
-                            </span>
-                        </div>
-                        <h3 class="text-xl font-bold text-center mb-4">Democratized Access</h3>
-                        <p class="text-gray-300 text-center">
-                            Small enterprises and individual researchers can access high-performance computing without substantial financial investments, democratizing AI innovation.
-                        </p>
-                    </div>
-                    
-                    <div class="bg-white/10 backdrop-blur-lg p-8 rounded-xl border border-white/10 hover:bg-white/20 transition-all">
-                        <div class="text-center mb-4">
-                            <span class="inline-block p-4 rounded-full bg-blue-900 text-blue-300 mb-2">
-                                <i class="fas fa-shield-alt text-3xl"></i>
-                            </span>
-                        </div>
-                        <h3 class="text-xl font-bold text-center mb-4">Enhanced Security</h3>
-                        <p class="text-gray-300 text-center">
-                            Our decentralized system processes data locally and distributes it throughout the network, dramatically reducing risks of data breaches and hacking attempts.
-                        </p>
-                    </div>
-                </div>
             </div>
             
-            <div class="mt-20">
-                <h3 class="text-2xl font-bold text-center mb-8">The GPU Bottleneck Solution</h3>
+            <div class="grid lg:grid-cols-5 gap-8 items-center">
+                <div class="lg:col-span-2">
+                    <h3 class="text-2xl font-bold mb-6 text-cyan-300">Domain-Specific Expertise</h3>
+                    <p class="text-indigo-100 mb-8">
+                        Connect with AI assistants that have deep knowledge in particular fields, from programming languages to system administration. Designed for tech-savvy entrepreneurs, developers, and technical teams.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start bg-white/5 p-4 rounded-lg backdrop-blur-sm border border-indigo-500/20 hover:bg-white/10 transition-all">
+                            <span class="text-cyan-500 mr-3 mt-1"><i class="fas fa-code"></i></span>
+                            <div>
+                                <span class="font-bold text-white">Technical Assistants</span>
+                                <p class="text-indigo-200 text-sm mt-1">Specialized in programming languages, frameworks, and system administration</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start bg-white/5 p-4 rounded-lg backdrop-blur-sm border border-indigo-500/20 hover:bg-white/10 transition-all">
+                            <span class="text-pink-500 mr-3 mt-1"><i class="fas fa-paint-brush"></i></span>
+                            <div>
+                                <span class="font-bold text-white">Creative Assistants</span>
+                                <p class="text-indigo-200 text-sm mt-1">Focused on design, poetry, and artistic expression for technical products</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start bg-white/5 p-4 rounded-lg backdrop-blur-sm border border-indigo-500/20 hover:bg-white/10 transition-all">
+                            <span class="text-purple-500 mr-3 mt-1"><i class="fas fa-terminal"></i></span>
+                            <div>
+                                <span class="font-bold text-white">Practical Assistants</span>
+                                <p class="text-indigo-200 text-sm mt-1">Specialized in documentation, code formatting, and technical content creation</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="/assistants" class="group inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-bold rounded-lg transition-all shadow-lg hover:shadow-cyan-500/25 hover:from-blue-700 hover:to-cyan-700">
+                        Explore All Assistants 
+                        <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
                 
-                <div class="flex flex-col md:flex-row items-center">
-                    <div class="w-full md:w-1/2 md:pr-12 mb-8 md:mb-0">
-                        <p class="text-lg mb-6">
-                            With AI business projected to exceed $400 billion by 2027 and growing at an annual rate of nearly 40%, the demand for GPU resources has skyrocketed. Global chip shortages and complex GPU manufacturing processes have created significant constraints.
-                        </p>
-                        <p class="text-lg mb-6">
-                            KAWAI solves this through a decentralized marketplace of distributed GPUs, enabling more efficient sourcing from diverse providers worldwide.
-                        </p>
-                        <div class="mt-8">
-                            <a href="#" class="px-8 py-4 bg-cyan-600 hover:bg-cyan-700 text-white font-bold rounded-lg transition-all inline-flex items-center">
-                                <i class="fas fa-microchip mr-2"></i>
-                                Join the Computing Network
-                            </a>
-                        </div>
-                    </div>
-                    <div class="w-full md:w-1/2">
-                        <div class="relative">
+                <div class="lg:col-span-3">
+                    
+                    <div class="bg-gradient-to-br from-indigo-900/30 to-blue-900/30 p-6 rounded-xl border border-indigo-500/30 backdrop-blur-sm shadow-2xl relative overflow-hidden">
+                        
+                        <div class="absolute -top-20 -right-20 w-40 h-40 bg-blue-500/20 rounded-full blur-3xl"></div>
+                        <div class="absolute -bottom-20 -left-20 w-40 h-40 bg-indigo-500/20 rounded-full blur-3xl"></div>
+                        
+                        <div id="ai-carousel-container" class="relative overflow-hidden rounded-lg">
                             
-                            <div class="h-72 bg-gradient-to-br from-indigo-800/50 to-purple-900/50 rounded-xl p-8 border border-white/10 relative">
+                            <div id="ai-slides" class="flex transition-transform duration-500">
                                 
-                                <div class="absolute left-0 inset-y-0 flex flex-col justify-between px-2 text-xs text-gray-300 font-semibold">
-                                    <div>100%</div>
-                                    <div>75%</div>
-                                    <div>50%</div>
-                                    <div>25%</div>
-                                    <div>0%</div>
+                                <div class="ai-carousel-slide w-full flex-shrink-0">
+                                    <img src="/static/feature/ai-agent-1.png" alt="AI Assistants Interface" class="rounded-lg w-full shadow-lg cursor-pointer hover:opacity-90 transition-opacity" onclick="openImageModal('/static/feature/ai-agent-1.png', 'AI Assistants Dashboard', 'Intuitive interface for interacting with specialized AI assistants')">
+                                    <p class="mt-4 text-lg font-medium text-cyan-300 text-center">AI Assistants Dashboard</p>
                                 </div>
                                 
                                 
-                                <div class="absolute inset-0 mt-6 mb-10 ml-10 mr-2">
-                                    <div class="h-full flex flex-col justify-between">
-                                        <div class="w-full border-b border-gray-500/20"></div>
-                                        <div class="w-full border-b border-gray-500/20"></div>
-                                        <div class="w-full border-b border-gray-500/20"></div>
-                                        <div class="w-full border-b border-gray-500/20"></div>
-                                        <div class="w-full border-b border-gray-500/20"></div>
-                                    </div>
+                                <div class="ai-carousel-slide w-full flex-shrink-0">
+                                    <img src="/static/feature/ai-agent-2.png" alt="Specialized AI Agents" class="rounded-lg w-full shadow-lg cursor-pointer hover:opacity-90 transition-opacity" onclick="openImageModal('/static/feature/ai-agent-2.png', 'Specialized Agent Interaction', 'Targeted AI assistance for specific domains and use cases')">
+                                    <p class="mt-4 text-lg font-medium text-cyan-300 text-center">Specialized Agent Interaction</p>
                                 </div>
                                 
                                 
-                                <div class="ml-10 flex h-[80%] items-end space-x-4 pt-4 relative z-10">
-                                    <div class="w-1/5 rounded-t overflow-hidden relative group">
-                                        <div class="bg-gradient-to-t from-cyan-500 to-blue-500 h-[20%] group-hover:opacity-80 transition-all">
-                                            <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gray-900/90 text-white px-2 py-1 rounded text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
-                                                2023: +20% Growth
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-1/5 rounded-t overflow-hidden relative group">
-                                        <div class="bg-gradient-to-t from-cyan-500 to-blue-500 h-[35%] group-hover:opacity-80 transition-all">
-                                            <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gray-900/90 text-white px-2 py-1 rounded text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
-                                                2024: +35% Growth
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-1/5 rounded-t overflow-hidden relative group">
-                                        <div class="bg-gradient-to-t from-cyan-500 to-blue-500 h-[50%] group-hover:opacity-80 transition-all">
-                                            <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gray-900/90 text-white px-2 py-1 rounded text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
-                                                2025: +50% Growth
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-1/5 rounded-t overflow-hidden relative group">
-                                        <div class="bg-gradient-to-t from-cyan-500 to-blue-500 h-[70%] group-hover:opacity-80 transition-all">
-                                            <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gray-900/90 text-white px-2 py-1 rounded text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
-                                                2026: +70% Growth
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="w-1/5 rounded-t overflow-hidden relative group">
-                                        <div class="bg-gradient-to-t from-cyan-500 to-blue-500 h-[95%] group-hover:opacity-80 transition-all">
-                                            <div class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gray-900/90 text-white px-2 py-1 rounded text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
-                                                2027: +95% Growth
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                
-                                <div class="mt-4 flex justify-between text-xs text-center text-blue-200 px-6">
-                                    <div>2023</div>
-                                    <div>2024</div>
-                                    <div>2025</div>
-                                    <div>2026</div>
-                                    <div>2027</div>
-                                </div>
-                                
-                                <div class="mt-6 text-center text-sm text-indigo-200 font-medium">
-                                    Projected AI GPU Demand Growth (2023-2027)
+                                <div class="ai-carousel-slide w-full flex-shrink-0">
+                                    <img src="/static/feature/ai-agent-3.png" alt="AI Productivity Features" class="rounded-lg w-full shadow-lg cursor-pointer hover:opacity-90 transition-opacity" onclick="openImageModal('/static/feature/ai-agent-3.png', 'Advanced Productivity Tools', 'Boost your workflow with AI-powered productivity features')">
+                                    <p class="mt-4 text-lg font-medium text-cyan-300 text-center">Advanced Productivity Tools</p>
                                 </div>
                             </div>
+                            
+                            
+                            <button id="ai-carousel-prev" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/60 text-white h-10 w-10 rounded-full flex items-center justify-center shadow-lg opacity-70 hover:opacity-100 transition-all focus:outline-none">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button id="ai-carousel-next" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/60 text-white h-10 w-10 rounded-full flex items-center justify-center shadow-lg opacity-70 hover:opacity-100 transition-all focus:outline-none">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
                         </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="mt-20">
-                <h3 class="text-2xl font-bold text-center mb-12">Major Projects in the Ecosystem</h3>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-white/5 backdrop-blur-lg p-6 rounded-xl border border-white/10 hover:bg-white/10 transition-all group">
-                        <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 rounded-full bg-blue-800 flex items-center justify-center mr-4">
-                                <i class="fas fa-paint-brush text-blue-300"></i>
-                            </div>
-                            <h4 class="text-xl font-bold">Render Network</h4>
-                        </div>
-                        <p class="text-gray-300 mb-4">
-                            A decentralized peer-to-peer solution that harnesses the power of idle GPUs worldwide to facilitate render jobs.
-                        </p>
-                        <div class="text-cyan-300 text-sm font-bold group-hover:text-cyan-200 transition-colors">
-                            Market Cap: $4.19B+ (2025)
-                        </div>
-                    </div>
-                    
-                    <div class="bg-white/5 backdrop-blur-lg p-6 rounded-xl border border-white/10 hover:bg-white/10 transition-all group">
-                        <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 rounded-full bg-green-800 flex items-center justify-center mr-4">
-                                <i class="fas fa-cloud text-green-300"></i>
-                            </div>
-                            <h4 class="text-xl font-bold">Akash Network</h4>
-                        </div>
-                        <p class="text-gray-300 mb-4">
-                            An open marketplace allowing users to access CPU, GPU, and storage resources using a reverse auction model.
-                        </p>
-                        <div class="text-cyan-300 text-sm font-bold group-hover:text-cyan-200 transition-colors">
-                            1,217% Growth (2023-2025)
-                        </div>
-                    </div>
-                    
-                    <div class="bg-white/5 backdrop-blur-lg p-6 rounded-xl border border-white/10 hover:bg-white/10 transition-all group">
-                        <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 rounded-full bg-purple-800 flex items-center justify-center mr-4">
-                                <i class="fas fa-microchip text-purple-300"></i>
-                            </div>
-                            <h4 class="text-xl font-bold">io.net</h4>
-                        </div>
-                        <p class="text-gray-300 mb-4">
-                            "The Internet of GPUs" offering decentralized GPU clusters specifically designed for AI startups and researchers.
-                        </p>
-                        <div class="text-cyan-300 text-sm font-bold group-hover:text-cyan-200 transition-colors">
-                            Leading DePIN Infrastructure
+                        
+                        
+                        <div class="flex justify-center mt-4 space-x-2">
+                            <button class="ai-carousel-indicator h-2 w-8 rounded-full bg-cyan-500" data-slide="0"></button>
+                            <button class="ai-carousel-indicator h-2 w-8 rounded-full bg-gray-500 hover:bg-cyan-500 transition-colors" data-slide="1"></button>
+                            <button class="ai-carousel-indicator h-2 w-8 rounded-full bg-gray-500 hover:bg-cyan-500 transition-colors" data-slide="2"></button>
                         </div>
                     </div>
                 </div>
@@ -1746,7 +1643,7 @@
         
         <div class="flex flex-col sm:flex-row justify-center gap-4">
             <a href="https://u.pcloud.link/publink/show?code=XZ1CPb5ZaaTjJyVoVRF0BxF39uAWbHzoVx2V" target="_blank" class="px-8 py-4 bg-gradient-to-r from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-bold rounded-lg transition-all shadow-xl hover:shadow-red-500/25">
-                <i class="fas fa-apple mr-2"></i>Download App
+                <i class="fas fa-download mr-2"></i>Download App
             </a>
             <a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=CRonCzMtoLRHE6UsdpUCrm7nm7BwM3NfJU1ssVWAGBL7" target="_blank" class="gradient-bg text-white px-8 py-3 rounded-lg font-medium shadow-lg hover:opacity-90 transition inline-block">
                 <i class="fas fa-wallet mr-2"></i>Buy $KAWAI on Raydium Now!
@@ -1774,6 +1671,26 @@
                 src: '/static/feature/crypto-wallet-1.png',
                 title: 'Storage & XCM Interface',
                 description: 'Manage blockchain storage and cross-chain messaging capabilities'
+            },
+            {
+                src: '/static/feature/setup-wallet.png',
+                title: 'Setup Wallet',
+                description: 'Initial wallet setup interface for managing your digital assets'
+            },
+            {
+                src: '/static/feature/ai-agent-1.png',
+                title: 'AI Assistants Dashboard',
+                description: 'Intuitive interface for interacting with specialized AI assistants'
+            },
+            {
+                src: '/static/feature/ai-agent-2.png',
+                title: 'Specialized Agent Interaction',
+                description: 'Targeted AI assistance for specific domains and use cases'
+            },
+            {
+                src: '/static/feature/ai-agent-3.png',
+                title: 'Advanced Productivity Tools',
+                description: 'Boost your workflow with AI-powered productivity features'
             }
         ];
         
@@ -1791,7 +1708,7 @@
         }
         
         
-        window.openImageModal = function(imageSrc) {
+        window.openImageModal = function(imageSrc, title, description) {
             
             const index = galleryImages.findIndex(img => img.src === imageSrc);
             if (index !== -1) {
@@ -1800,13 +1717,14 @@
             } else {
                 
                 document.getElementById('modalImage').src = imageSrc;
-                document.getElementById('modalTitle').textContent = 'KAWAI Multi-Chain Crypto Wallet';
-                document.getElementById('modalDescription').textContent = 'Securely manage all your digital assets with support for 25+ cryptocurrencies';
+                document.getElementById('modalTitle').textContent = title || 'KAWAI Image Preview';
+                document.getElementById('modalDescription').textContent = description || '';
             }
             
             document.getElementById('imageModal').classList.remove('hidden');
             document.body.style.overflow = 'hidden'; 
         }
+        
         
         window.closeImageModal = function() {
             document.getElementById('imageModal').classList.add('hidden');
