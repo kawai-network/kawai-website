@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
     <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
@@ -94,6 +94,33 @@
         .animation-delay-2000 {
             animation-delay: 2s;
         }
+
+        /* Mobile responsive styles */
+        @media (max-width: 768px) {
+            .container {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+            
+            #assistantsGrid {
+                gap: 12px;
+            }
+            
+            .toast {
+                top: auto;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%) translateY(20px);
+                right: auto;
+                width: 90%;
+                max-width: 300px;
+                text-align: center;
+            }
+            
+            .toast.show {
+                transform: translateX(-50%) translateY(0);
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-50 min-h-screen">
@@ -106,10 +133,16 @@
                     <img src="/static/kawai-background-red.png" alt="KAWAI Logo" class="h-10 mr-2 rounded-lg">
                     KAWAI
                 </a>
-                <div class="flex items-center">
-                    <form action="/search" method="GET" class="flex mr-4">
+                
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden flex items-center p-2 rounded text-white hover:text-primary-200">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                
+                <div id="nav-menu" class="hidden md:flex flex-col md:flex-row absolute md:relative top-16 md:top-0 left-0 right-0 bg-gray-900 md:bg-transparent z-50 pb-4 md:pb-0 shadow-md md:shadow-none md:items-center">
+                    <form action="/search" method="GET" class="flex mx-4 my-4 md:my-0 md:mr-4">
                         <input 
-                            class="px-4 py-2 rounded-l text-gray-800 focus:outline-none" 
+                            class="px-4 py-2 rounded-l text-gray-800 focus:outline-none w-full" 
                             type="search" 
                             name="q" 
                             placeholder="Search by Tx Hash, Address, Block..." 
@@ -118,26 +151,28 @@
                             <i class="fas fa-search"></i>
                         </button>
                     </form>
-                    <a href="/tx/" class="text-white hover:text-primary-200 mx-2">
-                        <i class="fas fa-exchange-alt mr-1"></i>
-                        <span>Transactions</span>
-                    </a>
-                    <a href="/block/" class="text-white hover:text-primary-200 mx-2">
-                        <i class="fas fa-cube mr-1"></i>
-                        <span>Blocks</span>
-                    </a>
-                    <a href="/#wallet" class="text-white hover:text-primary-200 mx-2">
-                        <i class="fas fa-wallet mr-1"></i>
-                        <span>Wallet</span>
-                    </a>
-                    <a href="/usecases" class="text-white hover:text-primary-200 mx-2">
-                        <i class="fas fa-lightbulb mr-1"></i>
-                        <span>Use Cases</span>
-                    </a>
-                    <a href="/assistants" class="text-white hover:text-primary-200 mx-2">
-                        <i class="fas fa-robot mr-1"></i>
-                        <span>AI Assistants</span>
-                    </a>
+                    <div class="flex flex-col md:flex-row px-4 md:px-0">
+                        <a href="/tx/" class="text-white hover:text-primary-200 py-2 md:py-0 md:mx-2">
+                            <i class="fas fa-exchange-alt mr-1"></i>
+                            <span>Transactions</span>
+                        </a>
+                        <a href="/block/" class="text-white hover:text-primary-200 py-2 md:py-0 md:mx-2">
+                            <i class="fas fa-cube mr-1"></i>
+                            <span>Blocks</span>
+                        </a>
+                        <a href="/#wallet" class="text-white hover:text-primary-200 py-2 md:py-0 md:mx-2">
+                            <i class="fas fa-wallet mr-1"></i>
+                            <span>Wallet</span>
+                        </a>
+                        <a href="/usecases" class="text-white hover:text-primary-200 py-2 md:py-0 md:mx-2">
+                            <i class="fas fa-lightbulb mr-1"></i>
+                            <span>Use Cases</span>
+                        </a>
+                        <a href="/assistants" class="text-white hover:text-primary-200 py-2 md:py-0 md:mx-2">
+                            <i class="fas fa-robot mr-1"></i>
+                            <span>AI Assistants</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -150,10 +185,10 @@
             
                 
 <div class="py-6">
-    <div class="flex items-center justify-between mb-6">
-        <h1 class="text-3xl font-bold text-gray-900">Assistant List <span class="ml-2 text-gray-500" id="assistantCount">0</span></h1>
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-6">
+        <h1 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-0">Assistant List <span class="ml-2 text-gray-500" id="assistantCount">0</span></h1>
         
-        <div class="relative w-64">
+        <div class="relative w-full md:w-64">
             <input type="text" id="searchInput" placeholder="Search assistants..." 
                    class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
             <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
@@ -162,9 +197,30 @@
         </div>
     </div>
     
-    <div class="flex gap-6">
+    <!-- Mobile Category Dropdown -->
+    <div class="block md:hidden mb-4">
+        <select id="mobileCategorySelect" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
+            <option value="all">All Categories</option>
+            <option value="academic">Academic</option>
+            <option value="career">Career</option>
+            <option value="copywriting">Copywriting</option>
+            <option value="design">Design</option>
+            <option value="education">Education</option>
+            <option value="emotions">Emotions</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="games">Games</option>
+            <option value="general">General</option>
+            <option value="life">Life</option>
+            <option value="marketing">Marketing</option>
+            <option value="office">Office</option>
+            <option value="programming">Programming</option>
+        </select>
+    </div>
+    
+    <div class="flex flex-col md:flex-row gap-6">
         
-        <div class="w-64 flex-shrink-0">
+        <!-- Desktop sidebar - hidden on mobile -->
+        <div class="hidden md:block w-64 flex-shrink-0">
             <ul class="space-y-2 sticky top-4">
                 <li>
                     <button class="category-btn w-full flex items-center px-4 py-3 rounded-lg bg-gray-800 text-white" data-category="all">
@@ -253,30 +309,28 @@
             </ul>
         </div>
         
-        
+        <!-- Assistants grid -->
         <div class="flex-1">
-            <div id="assistantsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                
+            <div id="assistantsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                 <div class="col-span-full flex justify-center py-10">
                     <div class="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-primary-600"></div>
                 </div>
-                
             </div>
         </div>
     </div>
 </div>
 
 
-<div id="assistantModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
+<div id="assistantModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
     <div class="bg-white rounded-lg shadow-lg w-full max-w-2xl max-h-[80vh] overflow-y-auto">
-        <div class="p-6">
+        <div class="p-4 sm:p-6">
             <div class="flex justify-between items-start mb-4">
-                <h2 id="modalTitle" class="text-2xl font-bold"></h2>
-                <button id="closeModal" class="text-gray-500 hover:text-gray-700">
+                <h2 id="modalTitle" class="text-xl sm:text-2xl font-bold pr-2"></h2>
+                <button id="closeModal" class="text-gray-500 hover:text-gray-700 p-1">
                     <i class="fas fa-times text-xl"></i>
                 </button>
             </div>
-            <div id="modalContent"></div>
+            <div id="modalContent" class="text-sm sm:text-base"></div>
         </div>
     </div>
 </div>
@@ -519,7 +573,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     document.getElementById('searchInput').addEventListener('input', function() {
         
-        const activeCategory = document.querySelector('.category-btn.bg-gray-800').dataset.category;
+        const activeCategory = document.querySelector('.category-btn.bg-gray-800')?.dataset.category || 
+                              document.getElementById('mobileCategorySelect').value;
         
         filterAssistants(activeCategory);
     });
@@ -540,8 +595,31 @@ document.addEventListener('DOMContentLoaded', function() {
             
             const category = this.dataset.category;
             filterAssistants(category);
+            
+            // Sync mobile dropdown
+            if (document.getElementById('mobileCategorySelect')) {
+                document.getElementById('mobileCategorySelect').value = category;
+            }
         });
     });
+    
+    // Mobile category select handler
+    const mobileCategorySelect = document.getElementById('mobileCategorySelect');
+    if (mobileCategorySelect) {
+        mobileCategorySelect.addEventListener('change', function() {
+            const category = this.value;
+            filterAssistants(category);
+            
+            // Sync desktop buttons if visible
+            if (window.innerWidth >= 768) {
+                document.querySelectorAll('.category-btn').forEach(btn => {
+                    if (btn.dataset.category === category) {
+                        btn.click();
+                    }
+                });
+            }
+        });
+    }
     
     
     document.getElementById('closeModal').addEventListener('click', closeModal);
@@ -560,6 +638,37 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Mobile menu toggle
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const navMenu = document.getElementById('nav-menu');
+    
+    if (mobileMenuButton && navMenu) {
+        mobileMenuButton.addEventListener('click', function() {
+            navMenu.classList.toggle('hidden');
+        });
+    }
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+        const isClickInsideNav = navMenu.contains(event.target);
+        const isClickOnMenuButton = mobileMenuButton.contains(event.target);
+        
+        if (!isClickInsideNav && !isClickOnMenuButton && !navMenu.classList.contains('hidden') && window.innerWidth < 768) {
+            navMenu.classList.add('hidden');
+        }
+    });
+    
+    // Adjust menu visibility on window resize
+    window.addEventListener('resize', function() {
+        if (window.innerWidth >= 768) {
+            navMenu.classList.remove('hidden');
+        } else if (!mobileMenuButton.classList.contains('active')) {
+            navMenu.classList.add('hidden');
+        }
+    });
+});
 </script>
 
             
@@ -567,10 +676,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
 
     
-    <footer class="bg-gray-900 text-gray-400 py-12">
+    <footer class="bg-gray-900 text-gray-400 py-8 sm:py-12">
         <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="col-span-2 md:col-span-1">
                     <h3 class="text-xl font-bold text-white mb-4 flex items-center">
                         <img src="/static/kawai-background-red.png" alt="KAWAI Logo" class="h-10 mr-3 rounded-lg">
                         KAWAI
@@ -604,7 +713,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <li><a href="#" class="hover:text-white">Network Status</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="hidden md:block">
                     <h3 class="text-lg font-semibold text-white mb-4">About</h3>
                     <ul class="space-y-2">
                         <li><a href="#" class="hover:text-white">About KAWAI</a></li>
@@ -614,7 +723,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </ul>
                 </div>
             </div>
-            <div class="border-t border-gray-800 mt-10 pt-8 text-center">
+            <div class="border-t border-gray-800 mt-8 pt-6 text-center text-sm">
                 <p>© 2025 KAWAI Network. All rights reserved.</p>
             </div>
         </div>
